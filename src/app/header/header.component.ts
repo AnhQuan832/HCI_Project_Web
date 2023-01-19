@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { faBookOpen,
+  faSquareCheck,
+  faUserGraduate } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +9,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.less']
 })
 export class HeaderComponent {
+  faUserGraduate = faUserGraduate;
 
 }
