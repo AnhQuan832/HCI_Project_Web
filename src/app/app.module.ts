@@ -8,19 +8,23 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavbarComponent } from './navbar/navbar.component';
 import {ButtonModule} from 'primeng/button';
 import {InputSwitchModule} from 'primeng/inputswitch';
+import {InputTextModule} from 'primeng/inputtext';
+import { LessonListComponent } from './lesson-list/lesson-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    NavbarComponent
+    NavbarComponent,
+    LessonListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     ButtonModule,
-    InputSwitchModule
+    InputSwitchModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]
