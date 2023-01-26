@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-import { faBookOpen,
-  faSquareCheck,
+import { Component, OnInit } from '@angular/core';
+import { 
   faUserGraduate } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -8,7 +7,11 @@ import { faBookOpen,
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.less']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
+  constructor() {};
+
+  ngOnInit(): void {};
+
   faUserGraduate = faUserGraduate;
 
 }
