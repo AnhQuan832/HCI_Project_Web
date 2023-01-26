@@ -2,29 +2,34 @@
     <div>
 
         <button class="btn lesson-btn"
-        (click)="select_first()" 
-        [ngClass]="{'selected-first' : selected_nav[0], 'non-selected' : !selected_nav[0]}">
+        type="button"
+        (click)="select_first()"
+        [routerLink] = "['/main/lesson']"
+        [ngClass]="{'selected-first' : selected_nav[0], 'non-selected-first' : !selected_nav[0]}">
             <fa-icon [icon]="faBookOpen" class="fa-2xl"></fa-icon>
             <div class="mt-1">Bài học</div>
         </button>
 
         <button class="btn try-test-btn"
-        (click)="select_second()" 
-        [ngClass]="{'selected-second' : selected_nav[1], 'non-selected' : !selected_nav[1]}">
+        (click)="select_second()"
+        [routerLink] = "['/main/mock-test']" 
+        [ngClass]="{'selected-second' : selected_nav[1], 'non-selected-second' : !selected_nav[1]}">
             <fa-icon [icon]="faSquareCheck" class="fa-2xl"></fa-icon>
             <div class="mt-1">Thi thử</div>
         </button>
 
         <button class="btn learn-btn"
-        (click)="select_third()" 
-        [ngClass]="{'selected-third' : selected_nav[2], 'non-selected' : !selected_nav[2]}">
+        (click)="select_third()"
+        [routerLink] = "['/main/review']" 
+        [ngClass]="{'selected-third' : selected_nav[2], 'non-selected-third' : !selected_nav[2]}">
             <fa-icon [icon]="faBook" class="fa-2xl"></fa-icon>
             <div class="mt-1">Ôn tập</div>
         </button>
 
         <button class="btn statistic-btn pr-1"
-        (click)="select_fourth()" 
-        [ngClass]="{'selected-fourth' : selected_nav[3], 'non-selected' : !selected_nav[3]}">
+        (click)="select_fourth()"
+        [routerLink] = "['/main/statistic']" 
+        [ngClass]="{'selected-fourth' : selected_nav[3], 'non-selected-third' : !selected_nav[3]}">
             <fa-icon [icon]="faChartSimple" class="fa-2xl"></fa-icon>
             <div class="mt-1 text-nowrap">Thống kê</div>
         </button>
