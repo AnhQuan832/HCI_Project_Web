@@ -1,3 +1,27 @@
-<p>
-  lesson-video works!
-</p>
+<app-lesson-header></app-lesson-header>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+
+<div class="lesson-video-wrapper m-5 px-5 pb-3">
+    <p-breadcrumb [model]="breadcrumbs"></p-breadcrumb>
+
+    <iframe height="600px" class="lesson-video-frame mb-5"
+    src="https://www.youtube.com/embed/7YACeUogSLo" allowfullscreen></iframe>
+
+    <p-tabView styleClass="mt-1">
+        <p-tabPanel header="Tổng quan">
+           <h4>I. Phương trình lượng giác cơ bản</h4>
+           <h5>1. Định nghĩa</h5>
+           <h6>
+            Phương trình bậc nhất đối với một hàm số lượng giác là phương trình có dạng: <br>
+            <div class="formula mt-2 ms-5">
+                <h6>\(ax^2 +bx +c =0\)</h6>
+            </div>
+            Trong đó, a,b là các hằng số (a≠0)(b≠0) và tt là một trong các hàm số lượng giác.</h6>
+        </p-tabPanel>
+        <p-tabPanel header="Ghi chú">
+            Content 2
+        </p-tabPanel>
+    </p-tabView>
+</div>

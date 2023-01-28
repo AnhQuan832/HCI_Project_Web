@@ -19,7 +19,7 @@
         <h5>Hãy chọn môn mà bạn muốn học</h5>
       </ng-template>
       <ng-template let-subject pTemplate="subject">
-        <span [class]="'subject-content w-100 h-100 text-center d-flex align-items-center justify-content-center '+subject.class">
+        <span [class]="'subject-content w-100 h-100 text-center d-flex align-items-center justify-content-center '+subject.class" (click)="scrollToAllLesson(subject.class)">
           {{subject.title}}
         </span>
       </ng-template>
@@ -51,21 +51,24 @@
     </p-dataView>
   </div>
 
-  <div class="dataview-all-lesson w-100 mt-5">
-    <p-dataView #dv [value]="recentStudied" layout="grid" 
-    [paginator]="true" [rows]="4" filterBy="title,chapter,no,subject" [styleClass]="'all-lesson'"
-    [sortOrder]="sortOrder" >
-      <ng-template pTemplate="header">
-        Tất cả các bài học tại đây
-        <div class="p-input-icon-left search-bar float-end ms-3">
-          <i class="pi pi-search my-auto" style="font-weight: 700;"></i>
-          <input type="search" pInputText placeholder="Tìm kiếm" class="rounded" (input)="dv.filter($any($event.target).value)" />
-        </div>
-        <p-dropdown [options]="sortOptions" placeholder="Chọn môn học" [ngModel]="selectedOptions" class="float-end"></p-dropdown>
+  <div class="dataview-all-lesson w-100 mt-5" id="allLesson">
+    <p-dataView #dv [value]="allLesson" layout="grid" 
+    [paginator]="true" [rows]="8" filterBy="title,chapter,no,subject" 
+    [styleClass]="'all-lesson'" [sortOrder]="sortOrder" emptyMessage="Xin lỗi vì sự bất tiện này nhưng hệ thống chưa có bài học bạn cần tìm!">
+      <ng-template pTemplate="header" style="overflow: hidden;">
+        <form [formGroup]="myFormGroup">
+          Tất cả các bài học tại đây
+          <div class="p-input-icon-left search-bar float-end ms-3">
+            <i class="pi pi-search my-auto" style="font-weight: 700;"></i>
+            <input type="search" pInputText placeholder="Tìm kiếm" class="rounded" (input)="dv.filter($any($event.target).value)" />
+          </div>
+          <p-dropdown #filterDropdown formControlName="filterDropdown" [options]="sortOptions" placeholder="Chọn môn học" (onChange)="updateFilter($event.value)" class="float-end"></p-dropdown>
+          <button class="reset-button d-flex justify-content-center align-items-center mt-3 me-3 float-end" (click)="clearFilters(filterDropdown)"><i class="fa fa-rotate-left" style="font-size: 30px; color: #fff; font-weight: 100;"></i> </button>
+        </form>
       </ng-template>
       <ng-template let-lesson pTemplate="gridItem">
         <div class="col-12 md:col-3">
-          <div class="lesson-grid-item card p-3 mx-3" [routerLink]="'/main/lesson-video'">
+          <div class="lesson-grid-item card p-3 m-3" [routerLink]="'/main/lesson-video'">
               <div class="lesson-grid-item-top">
                   <span class="lesson-chapter">{{lesson.chapter}}</span>
                   <span class="lesson-no float-end">{{lesson.no}}</span>
@@ -82,7 +85,5 @@
       </ng-template>
     </p-dataView>
   </div>
-
-  
 </div>
 

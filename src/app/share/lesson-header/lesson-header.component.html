@@ -1,0 +1,23 @@
+<div class="header-wrapper container">
+  <div class="row h-100 w-100">
+      <div class="col d-flex align-items-center">
+          <img src="https://i.ibb.co/N679qxd/logo.png" alt="" class="logo align-middle ms-2">
+      </div>
+
+      <div class="col-md-9 d-flex align-items-center justify-content-center">
+        <button #btn type="button" pButton class="lesson-header-nav-btn"><i class="fa fa-chevron-left"></i></button>
+        <button #btn type="button" pButton label="Bài 1: Phương trình lượng giác" (click)="menu.toggle($event)" class="lesson-header-menu-btn mx-3"></button>
+        <p-slideMenu #menu [model]="items" [popup]="true" [viewportHeight]="250" [style]="{'min-width':'175px'}" styleClass="lesson-header-menu" backLabel="Quay lại" ></p-slideMenu>
+        <button #btn type="button" pButton class="lesson-header-nav-btn"><i class="fa fa-chevron-right"></i></button>
+      </div>
+
+      <div class="col d-flex align-items-center">
+          <fa-icon [icon]="faUserGraduate" class="fa-2x" style="color: rgba(0, 0, 0, 0.3)"></fa-icon>
+          <p style="margin: 0px 0px 0px 15px; 
+          font-family: 'Gentium Book Basic';
+          font-weight: 500;
+          font-size: 20px;">Hoàng Phúc</p>
+      </div>
+  </div>
+</div>
+
