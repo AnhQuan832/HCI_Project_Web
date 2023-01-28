@@ -18,10 +18,6 @@ const routes: Routes = [
         component: LessonComponent
       },
       {
-        path: 'lesson-video',
-        component: LessonVideoComponent
-      },
-      {
         path: 'mock-test',
         component: MockTestComponent
       },
@@ -34,6 +30,10 @@ const routes: Routes = [
         component: StatisticComponent
       }
     ]
+  },
+  {
+    path: 'lesson-video',
+    component: LessonVideoComponent
   },
 ];
 

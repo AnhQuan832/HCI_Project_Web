@@ -227,6 +227,27 @@
             border-radius: 15px;
             border: none;
         }
+
+        .p-paginator .p-paginator-first, .p-paginator .p-paginator-prev, .p-paginator .p-paginator-next, .p-paginator .p-paginator-last{
+            border: none;
+            color: var(--primary);
+        }
+        
+        .p-paginator .p-paginator-pages .p-paginator-page.p-highlight{
+            background-color: var(--primary);
+        }
+
+        .p-paginator .p-paginator-pages .p-paginator-page{
+            border: none;
+        }
+
+        .p-dataview-emptymessage{
+            text-align: center;
+
+            font-family: 'Gentium Book Basic';
+            font-style: normal;
+            font-size: 24px;
+        }
     }
     
     .p-input-icon-left > .p-inputtext{
@@ -309,4 +330,14 @@
 
 .carousel-subject{
     height: fit-content;
+}
+
+.reset-button{
+    width: 45px;
+    height: 45px;
+
+    background-color: var(--primary);
+
+    border-radius: 15px;
+    border: none;
 }
