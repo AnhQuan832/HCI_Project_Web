@@ -75,6 +75,8 @@ export class LessonVideoComponent implements OnInit {
 
   addNote(){
     this.newNoteContent = "";
+    
+    this.video.pause();
 
     this.visibleBottomBarAdd = true;
   }
