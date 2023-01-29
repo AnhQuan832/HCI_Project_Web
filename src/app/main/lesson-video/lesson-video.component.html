@@ -6,19 +6,59 @@
 <div class="lesson-video-wrapper m-5 px-5 pb-3">
     <p-breadcrumb [model]="breadcrumbs"></p-breadcrumb>
 
-    <iframe height="600px" class="lesson-video-frame mb-5"
-    src="https://www.youtube.com/embed/7YACeUogSLo" allowfullscreen></iframe>
+    <video height="600px" controls class="lesson-video-frame mb-5" id="video">
+        <source src="http://localhost:4200/assets/lessonVideo.mp4" type="video/mp4">
+    </video>
+
+    <button (click)="setTimeStamp()" id="test-btn">test</button>
 
     <p-tabView styleClass="mt-1">
         <p-tabPanel header="Tổng quan">
-           <h4>I. Phương trình lượng giác cơ bản</h4>
-           <h5>1. Định nghĩa</h5>
-           <h6>
-            Phương trình bậc nhất đối với một hàm số lượng giác là phương trình có dạng: <br>
-            <div class="formula mt-2 ms-5">
-                <h6>\(ax^2 +bx +c =0\)</h6>
-            </div>
-            Trong đó, a,b là các hằng số (a≠0)(b≠0) và tt là một trong các hàm số lượng giác.</h6>
+            <h3>I. Phương trình lượng giác cơ bản</h3>
+            <h4>1. Phương trình sin(x) = a</h4>
+            <h5>
+                <div class="formula mt-2 ms-5">
+                    <h5>Nếu |a| > 1 thì phương trình vô nghiệm</h5>
+                    <h5>Nếu |a| ≤ 1 thì phương trình có nghiệm x = arcsin(a) + k2π và x = π - arcsin(a) + k2π</h5>
+                </div>
+            </h5>
+            <h4>2. Phương trình cos(x) = a</h4>
+            <h5>
+                <div class="formula mt-2 ms-5">
+                    <h5>Nếu |a| > 1 thì phương trình vô nghiệm</h5>
+                    <h5>Nếu |a| ≤ 1 thì phương trình có nghiệm x = arccos(a) + k2π và x = π - arccos(a) + k2π</h5>
+                </div>
+            </h5>
+            <h4>3. Phương trình tan(x) = a</h4>
+            <h5>
+                <div class="formula mt-2 ms-5">
+                    <h5>Phương trình luôn có nghiệm x = arctan(a) + kπ</h5>
+                </div>
+            </h5>
+            <h4>4. Phương trình cot(x) = a</h4>
+            <h5>
+                <div class="formula mt-2 ms-5">
+                    <h5>Phương trình luôn có nghiệm x = arccot(a) + kπ</h5>
+                </div>
+            </h5>
+            <h4>5. Các trường hợp đặc biệt</h4>
+            <h5>
+                <h5 class="ms-4">* Phương trình sin(x) = a</h5>
+                <div class="formula mt-2 ms-5">   
+                    <h5>sin(x) = 0 ⇔ x = kπ</h5>
+                    <h5>sin(x) = -1 ⇔ x = -π/2 + k2π</h5>
+                    <h5>sin(x) = 1 ⇔ x = π/2 + k2π</h5>
+                </div>
+                <h5 class="ms-4">* Phương trình cos(x) = a</h5>
+                <div class="formula mt-2 ms-5">
+                    <h5>sin(x) = 0 ⇔ x = π/2 + kπ</h5>
+                    <h5>sin(x) = -1 ⇔ x = π + k2π</h5>
+                    <h5>sin x = 1 ⇔ x = k2π</h5>
+                </div>
+            </h5>
+            <h3>II. Một số chú ý khi giải phương trình</h3>
+            <h5>- Khi giải phương trình lượng giác có chứa tan, cot, chứa ẩn ở mẫu, căn bậc chẵn,…thì cần đặt điều kiện cho ẩn.</h5>
+            <h5>- Khi giải xong phương trình thì cần chú ý thử lại đáp án, kiểm tra điều kiện</h5>
         </p-tabPanel>
         <p-tabPanel header="Ghi chú">
             Content 2
