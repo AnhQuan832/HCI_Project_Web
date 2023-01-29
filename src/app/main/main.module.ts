@@ -20,6 +20,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MenuModule } from 'primeng/menu';
 import { BreadcrumbModule } from 'primeng/breadcrumb';
 import { TabViewModule } from 'primeng/tabview';
+import { TableModule } from 'primeng/table';
+import { EditorModule } from 'primeng/editor';
+import { SidebarModule } from 'primeng/sidebar';
+import { ConfirmPopupModule } from 'primeng/confirmpopup';
+import { ToastModule } from 'primeng/toast';
 
 @NgModule({
   imports: [
@@ -35,7 +40,12 @@ import { TabViewModule } from 'primeng/tabview';
     ReactiveFormsModule,
     MenuModule,
     BreadcrumbModule,
-    TabViewModule
+    TabViewModule,
+    TableModule,
+    EditorModule,
+    SidebarModule,
+    ConfirmPopupModule,
+    ToastModule
   ],
   declarations: [
     LandingComponent,
