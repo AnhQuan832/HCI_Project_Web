@@ -1,0 +1,89 @@
+<div class="lesson-wrapper d-flex py-3 px-4 flex-wrap mb-5">
+  <div class="row lesson-banner d-flex align-items-center container">
+    <span class="col-7 banner-title ms-5">
+      Bài học
+    </span>
+    <span class="col d-flex justify-content-center flex-wrap pb-4">
+      <div class="row slogan-title float-end justify-content-center text-center w-100">
+        Bạn muốn học nhưng thời gian và<br> địa điểm không cho phép ?  
+      </div>
+      <div class="row slogan float-end justify-content-center text-center w-100">
+        Tại đây bạn có thể học bất cứ lúc nào <br> và bất kì đâu
+      </div>
+    </span>
+  </div>
+  
+  <div class="carousel-subject w-100">
+    <p-carousel [value] = subjects [numVisible]="3" [numScroll]="3" [circular]="true" [responsiveOptions]="responsiveOptions">
+      <ng-template pTemplate="header">
+        <h5>Hãy chọn môn mà bạn muốn học</h5>
+      </ng-template>
+      <ng-template let-subject pTemplate="subject">
+        <span [class]="'subject-content w-100 h-100 text-center d-flex align-items-center justify-content-center '+subject.class" (click)="scrollToAllLesson(subject.class)">
+          {{subject.title}}
+        </span>
+      </ng-template>
+    </p-carousel>
+  </div>
+
+  <div class="dataview-recent w-100 mb-5">
+    <p-dataView [value]="recentStudied" layout="grid">
+      <ng-template pTemplate="header">
+        Các bài đã học gần đây
+      </ng-template>
+      <ng-template let-lesson pTemplate="gridItem">
+        <div class="col-12 md:col-3">
+          <div class="lesson-grid-item card p-3 mx-3" [routerLink]="'/main/lesson-video'">
+              <div class="lesson-grid-item-top">
+                  <span class="lesson-chapter">{{lesson.chapter}}</span>
+                  <span class="lesson-no float-end">{{lesson.no}}</span>
+              </div>
+              <div class="lesson-grid-item-content d-flex justify-content-center flex-wrap">
+                  <div [class]="'subject-content text-center d-flex align-items-center justify-content-center '+lesson.class">{{lesson.subject}}</div>
+                  <div class="lesson-title my-2 w-100 text-center">{{lesson.title}}</div>
+              </div>
+              <div class="lesson-grid-item-bottom">
+                  <div class="lesson-description">{{lesson.description}}</div>
+              </div>
+          </div>
+      </div>
+      </ng-template>
+    </p-dataView>
+  </div>
+
+  <div class="dataview-all-lesson w-100 mt-5" id="allLesson">
+    <p-dataView #dv [value]="allLesson" layout="grid" 
+    [paginator]="true" [rows]="8" filterBy="title,chapter,no,subject" 
+    [styleClass]="'all-lesson'" [sortOrder]="sortOrder" emptyMessage="Xin lỗi vì sự bất tiện này nhưng hệ thống chưa có bài học bạn cần tìm!">
+      <ng-template pTemplate="header" style="overflow: hidden;">
+        <form [formGroup]="myFormGroup">
+          Tất cả các bài học tại đây
+          <div class="p-input-icon-left search-bar float-end ms-3">
+            <i class="pi pi-search my-auto" style="font-weight: 700;"></i>
+            <input type="search" pInputText placeholder="Tìm kiếm" class="rounded" (input)="dv.filter($any($event.target).value)" />
+          </div>
+          <p-dropdown #filterDropdown formControlName="filterDropdown" [options]="sortOptions" placeholder="Chọn môn học" (onChange)="updateFilter($event.value)" class="float-end"></p-dropdown>
+          <button class="reset-button d-flex justify-content-center align-items-center mt-3 me-3 float-end" (click)="clearFilters(filterDropdown)"><i class="fa fa-rotate-left" style="font-size: 30px; color: #fff; font-weight: 100;"></i> </button>
+        </form>
+      </ng-template>
+      <ng-template let-lesson pTemplate="gridItem">
+        <div class="col-12 md:col-3">
+          <div class="lesson-grid-item card p-3 m-3" [routerLink]="'/main/lesson-video'">
+              <div class="lesson-grid-item-top">
+                  <span class="lesson-chapter">{{lesson.chapter}}</span>
+                  <span class="lesson-no float-end">{{lesson.no}}</span>
+              </div>
+              <div class="lesson-grid-item-content d-flex justify-content-center flex-wrap">
+                  <div [class]="'subject-content text-center d-flex align-items-center justify-content-center '+lesson.class">{{lesson.subject}}</div>
+                  <div class="lesson-title my-2 w-100 text-center">{{lesson.title}}</div>
+              </div>
+              <div class="lesson-grid-item-bottom">
+                  <div class="lesson-description">{{lesson.description}}</div>
+              </div>
+          </div>
+      </div>
+      </ng-template>
+    </p-dataView>
+  </div>
+</div>
+
