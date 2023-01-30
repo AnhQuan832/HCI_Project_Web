@@ -1,3 +1,55 @@
-<p>
-  confirm works!
-</p>
+<div class="exam-confirm-wrapper d-flex justify-content-center flex-wrap">
+  <div class="bread-crumb w-100 mt-3">
+    <p-breadcrumb [model]="breadcrumbs"></p-breadcrumb>
+  </div>
+
+  <div class="exam-confirm-banner d-flex justify-content-center align-items-center mt-3">
+    Toán Học
+  </div>
+
+  <div class="exam-confirm-content w-100 mt-5">
+    <div class="exam-info text-center">
+      Thời lượng: 120 phút <br>
+      Nội dung: Toàn bộ chương trình toán 12
+    </div>
+
+    <div class="exam-history">
+      Các lần làm bài trước của bạn
+
+      <p-table #dt [value]="examHistory" [rows]="5" [paginator]="true" [globalFilterFields]="['content']" *ngIf="visible">
+        <ng-template pTemplate="header">
+            <tr>
+                <th style="min-width: 170px">
+                  Ngày làm bài
+                </th>
+                <th style="min-width: 170px">
+                  Thời gian làm bài
+                </th>
+                <th style="min-width: 170px">
+                  Số câu đúng / 50
+                </th>
+                <th style="min-width: 170px">
+                  Điểm / 10
+              </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-exam>
+            <tr>
+                <td>
+                  {{exam.date}}
+                </td>
+                <td>
+                  {{exam.time}}
+                </td>
+                <td>
+                  {{exam.correct}}
+                </td>
+                <td>
+                  {{exam.grade}}
+              </td>
+            </tr>
+        </ng-template>
+    </p-table>
+    </div>
+  </div>
+</div>

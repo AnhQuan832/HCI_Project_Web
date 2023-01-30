@@ -6,11 +6,16 @@ import { ExamRoutingModule } from './exam-routing.module';
 
 import { ExamComponent } from './exam/exam.component';
 import { ConfirmComponent } from './confirm/confirm.component';
+
+import { BreadcrumbModule } from 'primeng/breadcrumb';
+import { TableModule } from 'primeng/table';
 @NgModule({
   imports: [
     CommonModule,
     ExamRoutingModule,
-    AppShareModule
+    AppShareModule,
+    BreadcrumbModule,
+    TableModule
   ],
   declarations: [
     ExamComponent,
