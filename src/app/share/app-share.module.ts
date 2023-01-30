@@ -5,6 +5,8 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LessonHeaderComponent } from './lesson-header/lesson-header.component';
+import { ExamHeaderComponent } from './exam-header/exam-header.component';
+
 import { InputSwitchModule} from 'primeng/inputswitch';
 import { InputTextModule } from 'primeng/inputtext';
 import { SlideMenuModule } from 'primeng/slidemenu';
@@ -26,12 +28,14 @@ import { FontAwesomeModule, FaIconLibrary  } from '@fortawesome/angular-fontawes
   declarations: [
     HeaderComponent,
     NavbarComponent,
-    LessonHeaderComponent
+    LessonHeaderComponent,
+    ExamHeaderComponent
   ],
   exports: [
     HeaderComponent,
     NavbarComponent,
-    LessonHeaderComponent
+    LessonHeaderComponent,
+    ExamHeaderComponent
   ]
 })
 export class AppShareModule {
