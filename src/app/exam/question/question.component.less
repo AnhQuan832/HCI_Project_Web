@@ -1,0 +1,126 @@
+:host ::ng-deep{
+    .md\:col-3{
+        width: 20%;
+    }
+
+    .p-dataview{
+        border: 2px solid var(--primary);
+        border-radius: 15px;
+        margin: 10px;
+
+
+        .p-dataview-header{
+            background-color: transparent;
+            border: none;
+            padding: 5px;
+
+            font-family: 'Gentium Book Basic';
+            font-style: normal;
+            font-size: 18px;
+            font-weight: 100;
+
+            strong{
+                color: var(--primary);
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+
+        .p-dataview-content{
+            padding-inline: 5px;
+            border-radius: 15px;
+
+            .p-component .p-dataview-grid{
+                width: 100%;
+            }
+        
+            .card{
+                height: 55px;
+                overflow: hidden;
+
+                border-radius: 13px;
+                border: 2px solid var(--secondary);
+            }
+
+            .question-grid-item-top{
+                height: fit-content;
+                padding: 3px;
+
+                background-color: red;
+
+                font-family: 'Gentium Book Basic';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 18px;
+            }
+
+            .question-grid-item-content{
+                width: 100%;
+
+                .question-answer{
+                    font-family: 'Gentium Book Basic';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+
+            }
+
+            .flag{
+                background-color: var(--primary);
+                
+                color: #fff;
+            }
+
+            .not-answer{
+                background-color: var(--secondary);
+            }
+
+            .answered{
+                background: rgba(28, 109, 208, 0.6);
+
+                color: #fff;
+            }
+        }
+
+        .p-dataview-footer{
+            display: flex;
+            justify-content: center;
+
+            background-color: #fff;
+
+            border: none;
+            border-radius: 15px;
+
+            .myBtn{
+                height: 50px;
+                width: 150px;
+
+                background-color: var(--primary);
+                border-radius: 15px;
+                border: none;
+
+                color: #fff;
+                font-family: 'Gentium Book Basic';
+                font-style: normal;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+
+        .grid-nogutter{
+            border-radius: 15px;
+        }
+    }
+}
+
+.side-bar{
+    width: 20%;
+    min-width: 290px;
+}
+
+.question{
+    width: 100%;
+    background-color: red;
+}
