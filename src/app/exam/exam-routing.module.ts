@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { ConfirmComponent } from './confirm/confirm.component';
+import { ExamResultComponent } from './exam-result/exam-result.component';
 import { ExamReviewComponent } from './exam-review/exam-review.component';
 import { ExamComponent } from './exam/exam.component';
 import { QuestionComponent } from './question/question.component';
@@ -18,6 +19,10 @@ const routes: Routes = [
       {
         path: "question",
         component: QuestionComponent
+      },
+      {
+        path: "exam-result",
+        component: ExamResultComponent
       },
       {
         path: "exam-review",
