@@ -10,6 +10,7 @@ import { LessonComponent } from './lesson/lesson.component';
 import { ReviewComponent } from './review/review.component';
 import { StatisticComponent } from './statistic/statistic.component';
 import { LessonVideoComponent } from './lesson-video/lesson-video.component';
+
 import { CarouselModule} from 'primeng/carousel';
 import { DataViewModule} from 'primeng/dataview';
 import { DropdownModule} from 'primeng/dropdown';

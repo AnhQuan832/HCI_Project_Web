@@ -1,0 +1,68 @@
+<div class="question-wrapper d-flex">
+  <div class="side-bar">
+    <div class="dataview-side-bar mt-4">
+      <p-dataView [value]="questionsNum" layout="grid">
+        <ng-template pTemplate="header">
+          <div class="d-flex justify-content-center">
+            Thời gian còn lại: <strong class="ms-4" id="time-left">00:00:00</strong> 
+          </div>
+        </ng-template>
+        <ng-template let-question pTemplate="gridItem">
+          <div class="col-12 md:col-3">
+            <div class="question-grid-item card mx-1 my-1" (click)="scrollToAnswer(question.no)">
+                <div [class]="(question.isFlag ? ('flag ') : (question.isAnswer ? 'answered ' : 'not-answer ')) + 'question-grid-item-top d-flex justify-content-center'" >
+                    <span class="question-no text-center">{{question.no}}</span>
+                </div>
+                <div class="question-grid-item-content d-flex flex-wrap">
+                    <div class="question-answer w-100 text-center">{{question.answer}}</div>
+                </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="footer">
+          <button class="myBtn" (click)="submitExam()">Nộp bài</button>
+        </ng-template>
+      </p-dataView>
+      <p-scrollTop></p-scrollTop>
+    </div>
+  </div>
+  <div class="question">
+    <p-dataView #question_dv [value]="questionsNum" layout="list" [styleClass]="'dv-question'" [rows]="5" [paginator]="true" [first]="first">
+      <ng-template let-question pTemplate="listItem">
+        <div class="col-12">
+            <div class="question-list-item my-3 p-3" [id]="'answer' + question.no">
+                <div class="question-list-top d-flex flex-nowrap">
+                  <div class="title">
+                    Câu {{question.no}}: {{question.question}}
+                  </div>
+                  <button [class]="(question.isFlag ? ('flag ') : ('none-flag ')) +'pi pi-flag-fill d-inline float-end'" (click)="question.isFlag = !question.isFlag" ></button>
+                </div>
+                <div class="question-list-image" [style]="(question.questionImg == '') ? 'display: none' : ''" >
+                  <img [src]="question.questionImg" alt="">
+                </div>
+                <div class="question-list-answer mt-3">
+                  <div class="field-radiobutton">
+                    <p-radioButton name="city" value="A" [(ngModel)]="question.answer" inputId="answerA" (onClick)="question.isAnswer = true"></p-radioButton>
+                    <label for="answerA"><img [src]="question.answerA" alt=""></label>
+                  </div>
+                  <div class="field-radiobutton">
+                      <p-radioButton name="city" value="B" [(ngModel)]="question.answer" inputId="answerB" (onClick)="question.isAnswer = true"></p-radioButton>
+                      <label for="answerB"><img [src]="question.answerB" alt=""></label>
+                  </div>
+                  <div class="field-radiobutton">
+                      <p-radioButton name="city" value="C" [(ngModel)]="question.answer" inputId="answerC" (onClick)="question.isAnswer = true"></p-radioButton>
+                      <label for="answerC"><img [src]="question.answerC" alt=""></label>
+                  </div>
+                  <div class="field-radiobutton">
+                      <p-radioButton name="city" value="D" [(ngModel)]="question.answer" inputId="answerD" (onClick)="question.isAnswer = true"></p-radioButton>
+                      <label for="answerD"><img [src]="question.answerD" alt=""></label>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template pTemplate="footer">
+    </ng-template>
+    </p-dataView>
+  </div>
+</div>
