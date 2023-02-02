@@ -42,11 +42,13 @@
                 border: 2px solid var(--secondary);
             }
 
+            .card:hover{
+                border: 3px solid var(--primary);
+            }
+
             .question-grid-item-top{
                 height: fit-content;
                 padding: 3px;
-
-                background-color: red;
 
                 font-family: 'Gentium Book Basic';
                 font-style: normal;
@@ -112,6 +114,98 @@
         .grid-nogutter{
             border-radius: 15px;
         }
+
+        .p-paginator-bottom{
+            border-radius: 15px;
+            border: none;
+        }
+
+        .p-paginator .p-paginator-first, .p-paginator .p-paginator-prev, .p-paginator .p-paginator-next, .p-paginator .p-paginator-last{
+            border: none;
+            color: var(--primary);
+        }
+        
+        .p-paginator .p-paginator-pages .p-paginator-page.p-highlight{
+            background-color: var(--primary);
+        }
+
+        .p-paginator .p-paginator-pages .p-paginator-page{
+            border: none;
+        }
+
+        .p-dataview-emptymessage{
+            text-align: center;
+
+            font-family: 'Gentium Book Basic';
+            font-style: normal;
+            font-size: 24px;
+        }
+    }
+
+    .dv-question{
+        border: none;
+
+        .question-list-item{
+            border: 2px solid var(--secondary);
+            border-radius: 15px;
+
+            .question-list-top{
+                height: fit-content;
+
+                .title{
+                    font-family: 'Gentium Book Basic';
+                    font-size: 23px;
+                }
+
+                .flag {
+                    width: 33px;
+                    height: 33px;
+                    margin-left: auto;
+
+                    border-radius: 90px;
+                    border: none;
+                    background-color: var(--primary);
+                
+                    color: #fff;
+                }
+
+                .none-flag{
+                    width: 33px;
+                    height: 33px;
+                    margin-left: auto;
+
+                    border-radius: 90px;
+                    border: 2px solid var(--primary);
+                    background-color: #fff;
+                
+                    color: var(--primary);
+                }
+            }
+        }
+
+        .p-radiobutton .p-radiobutton-box.p-highlight{
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+
+    }
+
+    .dv-question.p-dataview-list .p-dataview-content > .p-grid > div{
+        border: none;
+    }
+
+    .p-scrolltop{
+        left: 120px;
+
+        background-color: var(--primary);
+        border-radius: 90px;
+    }
+
+    .p-scrolltop:hover{
+        left: 120px;
+
+        background-color: var(--primary);
+        border-radius: 90px;
     }
 }
 
@@ -122,5 +216,4 @@
 
 .question{
     width: 100%;
-    background-color: red;
 }

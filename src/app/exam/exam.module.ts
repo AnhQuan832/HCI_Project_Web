@@ -12,6 +12,11 @@ import { ExamReviewComponent } from './exam-review/exam-review.component';
 import { BreadcrumbModule } from 'primeng/breadcrumb';
 import { TableModule } from 'primeng/table';
 import { DataViewModule } from 'primeng/dataview';
+import { RadioButtonModule } from 'primeng/radiobutton';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { ScrollTopModule } from 'primeng/scrolltop';
+import { PaginatorModule } from 'primeng/paginator';
 @NgModule({
   imports: [
     CommonModule,
@@ -19,7 +24,12 @@ import { DataViewModule } from 'primeng/dataview';
     AppShareModule,
     BreadcrumbModule,
     TableModule,
-    DataViewModule
+    DataViewModule,
+    RadioButtonModule,
+    ReactiveFormsModule,
+    FormsModule,
+    ScrollTopModule,
+    PaginatorModule
   ],
   declarations: [
     ExamComponent,
