@@ -1,0 +1,201 @@
+:host ::ng-deep{
+    margin: 0;
+    overflow-y: hidden;
+
+    .p-breadcrumb{
+        padding-inline: 10rem;
+        background-color: transparent;
+
+        ul li .p-menuitem-link .p-menuitem-text{
+            color: var(--secondary);
+    
+            font-family: 'Gentium Book Basic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        ul li:last-child .p-menuitem-text{
+            color: var(--primary);
+        }
+    }
+
+    .p-datatable {
+        border: 2px solid var(--secondary);
+        border-radius: 15px;
+
+        .p-datatable-thead > tr > th{
+            border: none;
+            border-radius: 15px;
+
+            font-family: 'Gentium Book Basic';
+            font-style: normal;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .p-datatable-thead{
+            border-bottom: 2px solid var(--secondary);
+        }
+
+        .p-datatable-tbody > tr > td{
+            border: none;
+
+            font-family: 'Gentium Book Basic';
+            font-style: normal;
+            font-size: 20px;
+        }
+
+        .p-datatable-tbody > tr{
+            border-bottom: 2px solid var(--secondary);
+
+        }
+
+        .p-paginator-bottom{
+            border-radius: 15px;
+            border: none;
+        } 
+
+        .p-paginator .p-paginator-first, .p-paginator .p-paginator-prev, .p-paginator .p-paginator-next, .p-paginator .p-paginator-last{
+            border: none;
+            color: var(--primary);
+        }
+        
+        .p-paginator .p-paginator-pages .p-paginator-page.p-highlight{
+            background-color: var(--primary);
+        }
+
+        .p-paginator .p-paginator-pages .p-paginator-page{
+            border: none;
+        }
+
+        .p-datatable-tbody > tr:last-child {
+            background: rgba(28, 109, 208, 0.2);
+        }
+    }
+}
+
+.exam-result-wrapper{
+    padding-bottom: 50px;
+}
+
+.exam-result-banner{
+    width: 85%;
+    min-width: 900px;
+    height: 350px;
+    background: var(--math);
+    border-radius: 15px;
+
+    font-family: 'Gentium Book Basic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 128px;
+
+    color: #FFFFFF;
+}
+
+.exam-info{
+    font-family: 'Gentium Book Basic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.exam-history{
+    margin-inline: 15rem;
+
+    font-family: 'Gentium Book Basic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.result{
+    margin-inline: 15rem;
+
+    border: 2px solid var(--secondary);
+    border-radius: 15px;
+
+    font-family: 'Gentium Book Basic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+
+    .info-title{
+        text-align: right;
+    }
+
+    .info{
+        font-weight: 100;
+    }
+}
+
+.my-btn{
+    height: 70px;
+    width: 250px;
+
+    background-color: var(--primary);
+    border-radius: 15px;
+    border: none;
+
+    color: #fff;
+    font-family: 'Gentium Book Basic';
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.review-exam{
+    height: 30px;
+    width: 80px;
+
+    font-size: 18px;
+}
+
+.back{
+    border: 3px solid var(--primary);
+    background-color: #fff;
+
+    color: var(--primary);
+}
+
+.ave-grade{
+    font-size: 24px;
+}
+
+strong{
+    color: var(--primary);
+    font-size: 36px;
+}
+
+.difficulty-level{
+    strong{
+        color: black;
+        font-size: 24px;
+
+        float: right;
+        color: #fff;
+    }
+
+    .row > .col{
+        border-radius: 15px;
+
+        color: #fff;
+    }
+
+    .difficulty-level-0{
+        background-color: var(--difficulty0);
+    }
+
+    .difficulty-level-1{
+        background-color: var(--difficulty1);
+    }
+
+    .difficulty-level-2{
+        background-color: var(--difficulty2);
+    }
+
+    .difficulty-level-3{
+        background-color: var(--difficulty3);
+    }
+}

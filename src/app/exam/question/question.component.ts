@@ -72,7 +72,7 @@ export class QuestionComponent implements OnInit {
     (document.getElementById("time-left") as HTMLDivElement).innerHTML = hours_text + ":" + mins_text + ":" + sec_text;
 
     if (sec_num < 0){
-      router.navigateByUrl("/exam/exam-review");
+      router.navigateByUrl("/exam/exam-result");
     }
   }
 
@@ -91,6 +91,6 @@ export class QuestionComponent implements OnInit {
   }
 
   submitExam(){
-    this.router.navigateByUrl("/exam/exam-review");
+    this.router.navigateByUrl("/exam/exam-result");
   }
 }

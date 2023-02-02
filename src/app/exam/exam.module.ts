@@ -17,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { PaginatorModule } from 'primeng/paginator';
+import { ExamResultComponent } from './exam-result/exam-result.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -35,6 +36,7 @@ import { PaginatorModule } from 'primeng/paginator';
     ExamComponent,
     ConfirmComponent,
     QuestionComponent,
+    ExamResultComponent,
     ExamReviewComponent
   ]
 })
