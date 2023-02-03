@@ -15,7 +15,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer1A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer1B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer1C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png",
+            answerExplanation: "",
+            answerImage: ""
             
         },
         {
@@ -30,7 +32,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer2A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer2B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer2C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "3",
@@ -44,7 +48,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer3A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer3B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer3C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "4",
@@ -58,7 +64,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer4A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer4B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer4C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "5",
@@ -72,7 +80,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer5A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer5B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer5C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "6",
@@ -86,7 +96,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer1A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer1B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer1C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png",
+            answerExplanation: "",
+            answerImage: ""
             
         },
         {
@@ -101,7 +113,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer2A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer2B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer2C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "8",
@@ -115,7 +129,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer3A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer3B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer3C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "9",
@@ -129,7 +145,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer4A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer4B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer4C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "10",
@@ -143,7 +161,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer5A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer5B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer5C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "11",
@@ -157,7 +177,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer1A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer1B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer1C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png",
+            answerExplanation: "",
+            answerImage: ""
             
         },
         {
@@ -172,7 +194,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer2A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer2B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer2C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "13",
@@ -186,7 +210,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer3A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer3B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer3C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "14",
@@ -200,7 +226,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer4A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer4B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer4C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "15",
@@ -214,7 +242,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer5A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer5B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer5C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "16",
@@ -228,7 +258,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer1A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer1B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer1C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png",
+            answerExplanation: "",
+            answerImage: ""
             
         },
         {
@@ -243,7 +275,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer2A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer2B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer2C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "18",
@@ -257,7 +291,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer3A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer3B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer3C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "19",
@@ -271,7 +307,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer4A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer4B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer4C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "20",
@@ -285,7 +323,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer5A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer5B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer5C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "21",
@@ -299,7 +339,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer1A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer1B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer1C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png",
+            answerExplanation: "",
+            answerImage: ""
             
         },
         {
@@ -314,7 +356,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer2A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer2B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer2C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "23",
@@ -328,7 +372,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer3A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer3B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer3C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "24",
@@ -342,7 +388,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer4A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer4B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer4C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "25",
@@ -356,7 +404,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer5A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer5B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer5C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "26",
@@ -370,7 +420,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer1A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer1B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer1C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png",
+            answerExplanation: "",
+            answerImage: ""
             
         },
         {
@@ -385,7 +437,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer2A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer2B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer2C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "28",
@@ -399,7 +453,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer3A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer3B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer3C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "29",
@@ -413,7 +469,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer4A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer4B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer4C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "30",
@@ -427,7 +485,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer5A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer5B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer5C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "31",
@@ -441,7 +501,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer1A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer1B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer1C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png",
+            answerExplanation: "",
+            answerImage: ""
             
         },
         {
@@ -456,7 +518,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer2A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer2B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer2C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "33",
@@ -470,7 +534,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer3A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer3B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer3C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "34",
@@ -484,7 +550,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer4A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer4B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer4C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "35",
@@ -498,7 +566,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer5A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer5B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer5C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "36",
@@ -512,7 +582,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer1A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer1B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer1C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png",
+            answerExplanation: "",
+            answerImage: ""
             
         },
         {
@@ -527,7 +599,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer2A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer2B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer2C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "38",
@@ -541,7 +615,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer3A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer3B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer3C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "39",
@@ -555,7 +631,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer4A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer4B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer4C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "40",
@@ -569,7 +647,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer5A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer5B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer5C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "41",
@@ -583,7 +663,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer1A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer1B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer1C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png",
+            answerExplanation: "",
+            answerImage: ""
             
         },
         {
@@ -598,7 +680,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer2A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer2B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer2C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "43",
@@ -612,7 +696,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer3A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer3B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer3C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "44",
@@ -626,7 +712,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer4A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer4B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer4C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "45",
@@ -640,7 +728,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer5A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer5B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer5C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "46",
@@ -654,7 +744,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer1A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer1B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer1C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png",
+            answerExplanation: "",
+            answerImage: ""
             
         },
         {
@@ -669,7 +761,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer2A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer2B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer2C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "48",
@@ -683,7 +777,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer3A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer3B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer3C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "49",
@@ -697,7 +793,9 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer4A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer4B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer4C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png",
+            answerExplanation: "",
+            answerImage: ""
         },
         {
             no: "50",
@@ -711,13 +809,174 @@ export class ExamData {
             answerA: "http://localhost:4200/assets/image/questionAnswer5A.png",
             answerB: "http://localhost:4200/assets/image/questionAnswer5B.png",
             answerC: "http://localhost:4200/assets/image/questionAnswer5C.png",
-            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png"
+            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png",
+            answerExplanation: "",
+            answerImage: ""
         }
     ];
 
-    randomAnswer(){
-        const answers = "ABCD";
-
-        return answers.charAt(Math.floor(Math.random() * answers.length));
-    }
+    public questionsReview: IQuestion[] = [
+        {
+            no: "1",
+            isAnswer: true,
+            answer: "A",
+            correctAnswer: "C",
+            difficultyLevel: 0,
+            isFlag: false,
+            question: "Có bao nhiêu cách chọn hai học sinh từ một nhóm gồm học sinh ?",
+            questionImg: "",
+            answerA: "http://localhost:4200/assets/image/questionAnswer1A.png",
+            answerB: "http://localhost:4200/assets/image/questionAnswer1B.png",
+            answerC: "http://localhost:4200/assets/image/questionAnswer1C.png",
+            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png",
+            answerExplanation: "",
+            answerImage: ""
+            
+        },
+        {
+            no: "2",
+            isAnswer: true,
+            answer: "B",
+            correctAnswer: "B",
+            difficultyLevel: 0,
+            isFlag: false,
+            question: "Trong không gian mặt phẳng (P):x +2y +3z -5 = 0 có một vectơ pháp tuyến là",
+            questionImg: "",
+            answerA: "http://localhost:4200/assets/image/questionAnswer2A.png",
+            answerB: "http://localhost:4200/assets/image/questionAnswer2B.png",
+            answerC: "http://localhost:4200/assets/image/questionAnswer2C.png",
+            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png",
+            answerExplanation: "",
+            answerImage: ""
+        },
+        {
+            no: "3",
+            isAnswer: true,
+            answer: "C",
+            correctAnswer: "C",
+            difficultyLevel: 0,
+            isFlag: false,
+            question: "Trong không gian cho hai điểm A(2; -4; 3) và B(2; 2; 7). Trung điểm của đoạn thẳng có tọa độ là",
+            questionImg: "",
+            answerA: "http://localhost:4200/assets/image/questionAnswer3A.png",
+            answerB: "http://localhost:4200/assets/image/questionAnswer3B.png",
+            answerC: "http://localhost:4200/assets/image/questionAnswer3C.png",
+            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png",
+            answerExplanation: "",
+            answerImage: ""
+        },
+        {
+            no: "4",
+            isAnswer: true,
+            answer: "A",
+            correctAnswer: "A",
+            difficultyLevel: 0,
+            isFlag: true,
+            question: "Cho hình chóp S.ABCD có đáy là hình vuông cạnh a, SA vuông góc với mặt phẳng đáy và SB = 2. Góc giữa đường thẳng và mặt phẳng đáy bằng",
+            questionImg: "",
+            answerA: "http://localhost:4200/assets/image/questionAnswer4A.png",
+            answerB: "http://localhost:4200/assets/image/questionAnswer4B.png",
+            answerC: "http://localhost:4200/assets/image/questionAnswer4C.png",
+            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png",
+            answerExplanation: "",
+            answerImage: ""
+        },
+        {
+            no: "5",
+            isAnswer: true,
+            answer: "A",
+            correctAnswer: "C",
+            difficultyLevel: 1,
+            isFlag: false,
+            question: "Cho hình chóp S.ABCD có đáy là hình vuông cạnh a, SA vuông góc với mặt phẳng đáy và SB = 2. Góc giữa đường thẳng và mặt phẳng đáy bằng",
+            questionImg: "http://localhost:4200/assets/image/questionImg5.png",
+            answerA: "http://localhost:4200/assets/image/questionAnswer5A.png",
+            answerB: "http://localhost:4200/assets/image/questionAnswer5B.png",
+            answerC: "http://localhost:4200/assets/image/questionAnswer5C.png",
+            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png",
+            answerExplanation: "",
+            answerImage: ""
+        },
+        {
+            no: "6",
+            isAnswer: true,
+            answer: "A",
+            correctAnswer: "C",
+            difficultyLevel: 1,
+            isFlag: false,
+            question: "Có bao nhiêu cách chọn hai học sinh từ một nhóm gồm học sinh ?",
+            questionImg: "",
+            answerA: "http://localhost:4200/assets/image/questionAnswer1A.png",
+            answerB: "http://localhost:4200/assets/image/questionAnswer1B.png",
+            answerC: "http://localhost:4200/assets/image/questionAnswer1C.png",
+            answerD: "http://localhost:4200/assets/image/questionAnswer1D.png",
+            answerExplanation: "",
+            answerImage: ""
+            
+        },
+        {
+            no: "7",
+            isAnswer: true,
+            answer: "B",
+            correctAnswer: "B",
+            difficultyLevel: 2,
+            isFlag: false,
+            question: "Trong không gian mặt phẳng (P):x +2y +3z -5 = 0 có một vectơ pháp tuyến là",
+            questionImg: "",
+            answerA: "http://localhost:4200/assets/image/questionAnswer2A.png",
+            answerB: "http://localhost:4200/assets/image/questionAnswer2B.png",
+            answerC: "http://localhost:4200/assets/image/questionAnswer2C.png",
+            answerD: "http://localhost:4200/assets/image/questionAnswer2D.png",
+            answerExplanation: "",
+            answerImage: ""
+        },
+        {
+            no: "8",
+            isAnswer: true,
+            answer: "C",
+            correctAnswer: "C",
+            difficultyLevel: 2,
+            isFlag: false,
+            question: "Trong không gian cho hai điểm A(2; -4; 3) và B(2; 2; 7). Trung điểm của đoạn thẳng có tọa độ là",
+            questionImg: "",
+            answerA: "http://localhost:4200/assets/image/questionAnswer3A.png",
+            answerB: "http://localhost:4200/assets/image/questionAnswer3B.png",
+            answerC: "http://localhost:4200/assets/image/questionAnswer3C.png",
+            answerD: "http://localhost:4200/assets/image/questionAnswer3D.png",
+            answerExplanation: "",
+            answerImage: ""
+        },
+        {
+            no: "9",
+            isAnswer: true,
+            answer: "A",
+            correctAnswer: "A",
+            difficultyLevel: 3,
+            isFlag: true,
+            question: "Cho hình chóp S.ABCD có đáy là hình vuông cạnh a, SA vuông góc với mặt phẳng đáy và SB = 2. Góc giữa đường thẳng và mặt phẳng đáy bằng",
+            questionImg: "",
+            answerA: "http://localhost:4200/assets/image/questionAnswer4A.png",
+            answerB: "http://localhost:4200/assets/image/questionAnswer4B.png",
+            answerC: "http://localhost:4200/assets/image/questionAnswer4C.png",
+            answerD: "http://localhost:4200/assets/image/questionAnswer4D.png",
+            answerExplanation: "",
+            answerImage: ""
+        },
+        {
+            no: "10",
+            isAnswer: true,
+            answer: "A",
+            correctAnswer: "C",
+            difficultyLevel: 3,
+            isFlag: false,
+            question: "Cho hình chóp S.ABCD có đáy là hình vuông cạnh a, SA vuông góc với mặt phẳng đáy và SB = 2. Góc giữa đường thẳng và mặt phẳng đáy bằng",
+            questionImg: "http://localhost:4200/assets/image/questionImg5.png",
+            answerA: "http://localhost:4200/assets/image/questionAnswer5A.png",
+            answerB: "http://localhost:4200/assets/image/questionAnswer5B.png",
+            answerC: "http://localhost:4200/assets/image/questionAnswer5C.png",
+            answerD: "http://localhost:4200/assets/image/questionAnswer5D.png",
+            answerExplanation: "",
+            answerImage: ""
+        },
+    ];
 }

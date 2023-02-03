@@ -10,5 +10,7 @@ export interface IQuestion {
     answerA: String,
     answerB: String,
     answerC: String,
-    answerD: String
+    answerD: String,
+    answerExplanation: String,
+    answerImage: String
 }

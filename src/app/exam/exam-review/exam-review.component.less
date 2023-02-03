@@ -1,0 +1,322 @@
+:host ::ng-deep{
+    .md\:col-3{
+        width: 20%;
+    }
+
+    .p-dataview{
+        border: 2px solid var(--primary);
+        border-radius: 15px;
+        margin: 10px;
+
+
+        .p-dataview-header{
+            background-color: transparent;
+            border: none;
+            padding: 5px;
+
+            font-family: 'Gentium Book Basic';
+            font-style: normal;
+            font-size: 20px;
+            font-weight: 700;
+
+            strong{
+                color: var(--primary);
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+
+        .p-dataview-content{
+            padding-inline: 5px;
+            border-radius: 15px;
+
+            .p-component .p-dataview-grid{
+                width: 100%;
+            }
+        
+            .card{
+                height: 55px;
+                overflow: hidden;
+
+                border-radius: 13px;
+                border: 2px solid var(--secondary);
+            }
+
+            .card:hover{
+                border: 3px solid var(--primary);
+            }
+
+            .question-grid-item-top{
+                height: fit-content;
+                padding: 3px;
+
+                font-family: 'Gentium Book Basic';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 18px;
+            }
+
+            .question-grid-item-content{
+                width: 100%;
+
+                .question-answer{
+                    font-family: 'Gentium Book Basic';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+
+            }
+
+            .difficulty-level-0{
+                background-color: var(--difficulty0);
+                
+                color: #fff;
+            }
+
+            .difficulty-level-1{
+                background-color: var(--difficulty1);
+                
+                color: #fff;
+            }
+
+            .difficulty-level-2{
+                background-color: var(--difficulty2);
+                
+                color: #fff;
+            }
+
+            .difficulty-level-3{
+                background-color: var(--difficulty3);
+                
+                color: #fff;
+            }
+
+            .correctAnswer{
+                background-color: var(--difficulty0);
+
+                color: #fff;
+            }
+
+            .incorrectAnswer{
+                background-color: var(--difficulty3);
+
+                color: #fff;
+            }
+
+            .fa-check{
+                color: var(--difficulty0);
+            }
+
+            .fa-times{
+                color: var(--difficulty3);
+            }
+
+            .fa-bell{
+                color: #fff;
+            }
+        }
+
+        .p-dataview-footer{
+            display: flex;
+            justify-content: center;
+
+            background-color: #fff;
+
+            border: none;
+            border-radius: 15px;
+
+            .myBtn{
+                height: 50px;
+                width: 190px;
+
+                background-color: var(--primary);
+                border-radius: 15px;
+                border: none;
+
+                color: #fff;
+                font-family: 'Gentium Book Basic';
+                font-style: normal;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+
+        .grid-nogutter{
+            border-radius: 15px;
+        }
+
+        .p-paginator-bottom{
+            border-radius: 15px;
+            border: none;
+        }
+
+        .p-paginator .p-paginator-first, .p-paginator .p-paginator-prev, .p-paginator .p-paginator-next, .p-paginator .p-paginator-last{
+            border: none;
+            color: var(--primary);
+        }
+        
+        .p-paginator .p-paginator-pages .p-paginator-page.p-highlight{
+            background-color: var(--primary);
+        }
+
+        .p-paginator .p-paginator-pages .p-paginator-page{
+            border: none;
+        }
+
+        .p-dataview-emptymessage{
+            text-align: center;
+
+            font-family: 'Gentium Book Basic';
+            font-style: normal;
+            font-size: 24px;
+        }
+    }
+
+    .p-inputswitch {
+
+        .p-inputswitch-slider{
+            border-radius: 90px;
+        }
+
+        .p-inputswitch-slider:before{
+            border-radius: 90px;
+        }
+    }
+
+    .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider{
+        background-color: var(--primary);
+    }
+
+    .dv-question{
+        border: none;
+
+        .question-list-item{
+            border: 2px solid var(--secondary);
+            border-radius: 15px;
+
+            .question-list-top{
+                height: fit-content;
+
+                .title{
+                    font-family: 'Gentium Book Basic';
+                    font-size: 23px;
+                }
+
+                .difficulty-level{
+                    width: 33px;
+                    height: 33px;
+                    margin-left: auto;
+
+                    border-radius: 90px;
+                    border: none;
+                    background-color: var(--primary);
+                
+                    color: #fff;
+                }
+
+                .pointPerQuestion{
+                    font-family: 'Gentium Book Basic';
+                    font-size: 23px;
+                    font-weight: 700;
+                }
+
+                .pointPerQuestion.correctAnswer {
+                    background-color: #fff;
+
+                    color: var(--difficulty0);
+                }
+
+                .pointPerQuestion.incorrectAnswer{
+                    background-color: #fff;
+
+                    color: var(--difficulty3);
+                }
+            }
+
+            .question-list-answer{
+                .indicate{
+                    width: 20px;
+                    height: 20px;
+
+                    font-size: 25px;
+                }
+
+                .correctAnswer{
+                    background-color: #fff;
+
+                    .p-radiobutton-box.p-highlight{
+                        background-color: var(--difficulty0);
+                    }
+
+                    .p-disabled{
+                        opacity: 1;
+                    }
+                }
+
+                .incorrectAnswer{
+                    background-color: #fff;
+
+                    .p-radiobutton-box.p-highlight{
+                        background-color: var(--difficulty3);
+                        border-color: var(--difficulty3);
+                    }
+
+                    .p-disabled{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .question-list-item.correctAnswer{
+            border: 2px solid var(--difficulty0);
+            border-radius: 15px;
+            background-color: #fff;
+
+            color: black;
+        }
+
+        .question-list-item.incorrectAnswer{
+            border: 2px solid var(--difficulty3);
+            border-radius: 15px;
+            background-color: #fff;
+
+            color: black;
+        }
+
+        .p-radiobutton .p-radiobutton-box.p-highlight{
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+
+    }
+
+    .dv-question.p-dataview-list .p-dataview-content > .p-grid > div{
+        border: none;
+    }
+
+    .p-scrolltop{
+        left: 120px;
+
+        background-color: var(--primary);
+        border-radius: 90px;
+    }
+
+    .p-scrolltop:hover{
+        left: 120px;
+
+        background-color: var(--primary);
+        border-radius: 90px;
+    }
+}
+
+.side-bar{
+    width: 20%;
+    min-width: 290px;
+}
+
+.question{
+    width: 100%;
+}

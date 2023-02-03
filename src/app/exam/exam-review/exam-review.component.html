@@ -1,3 +1,83 @@
-<p>
-  exam-review works!
-</p>
+<div class="question-wrapper d-flex">
+  <div class="side-bar">
+    <div class="dataview-side-bar mt-4">
+      <p-dataView [value]="questionsNum" layout="grid">
+        <ng-template pTemplate="header">
+          <div class="d-flex justify-content-center">
+            Xem độ thông hiểu: 
+            <p-inputSwitch [(ngModel)]="difficultyView" class="ms-3"></p-inputSwitch>
+          </div>
+        </ng-template>
+        <ng-template let-question pTemplate="gridItem">
+          <div class="col-12 md:col-3">
+            <div class="question-grid-item card mx-1 my-1" (click)="scrollToAnswer(question.no)">
+                <div [class]="(difficultyView ? ('difficulty-level-' + question.difficultyLevel + ' ') : ((question.answer == question.correctAnswer) ? 'correctAnswer ' : 'incorrectAnswer ')) + 'question-grid-item-top d-flex justify-content-center'" >
+                    <span class="question-no text-center">{{question.no}}</span>
+                </div>
+                <div class="question-grid-item-content d-flex flex-wrap">
+                    <div class="question-answer w-100 text-center"><i [class]="(question.answer == question.correctAnswer) ? 'fa fa-check' : 'fa fa-times'"></i></div>
+                </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="footer">
+          <button class="myBtn">Hoàn thành xem lại</button>
+        </ng-template>
+      </p-dataView>
+      <p-scrollTop></p-scrollTop>
+    </div>
+  </div>
+  <div class="question">
+    <p-dataView #question_dv [value]="questionsNum" layout="list" [styleClass]="'dv-question'" [rows]="5" [paginator]="true" [first]="first">
+      <ng-template let-question pTemplate="listItem">
+        <div class="col-12">
+            <div [class]="((question.answer == question.correctAnswer) ? 'correctAnswer ' : 'incorrectAnswer ') +  'question-list-item my-3 p-3'" [id]="'answer' + question.no">
+                <div class="question-list-top d-flex flex-nowrap">
+                  <div class="title me-2">
+                    Câu {{question.no}}: {{question.question}}
+                  </div>
+                    <div *ngIf="question.answer == question.correctAnswer" class="correctAnswer ms-auto pointPerQuestion">
+                      0.2/0.2
+                    </div>
+                    <div *ngIf="!(question.answer == question.correctAnswer)" class="incorrectAnswer ms-auto pointPerQuestion">
+                      0.0/0.2
+                    </div>
+                  </div>
+                <div class="question-list-image" [style]="(question.questionImg == '') ? 'display: none' : ''" >
+                  <img [src]="question.questionImg" alt="">
+                </div>
+                <div class="question-list-answer mt-3">
+
+                  <div class="field-radiobutton">
+                    <i [class]="(question.correctAnswer == 'A' ? 'fa fa-check' : (question.answer == 'A' ? 'fa fa-times' : 'fa fa-bell')) + ' indicate me-2 mb-2'"></i>
+                    <p-radioButton name="question" value="A" [(ngModel)]="question.answer == 'A' ? question.answer : question.correctAnswer" inputId="answerA" [disabled]="true" [styleClass]="(question.correctAnswer == 'A' ? 'correctAnswer' : (question.answer == 'A' ? 'incorrectAnswer' : ''))"></p-radioButton>
+                    <label for="answerA"><img [src]="question.answerA" alt=""></label>
+                  </div>
+
+                  <div class="field-radiobutton">
+                      <i [class]="(question.correctAnswer == 'B' ? 'fa fa-check' : (question.answer == 'B' ? 'fa fa-times' : 'fa fa-bell')) + ' indicate me-2 mb-2'"></i>
+                      <p-radioButton name="question" value="B" [(ngModel)]="question.answer == 'B' ? question.answer : question.correctAnswer" inputId="answerB" [disabled]="true" [styleClass]="(question.correctAnswer == 'B' ? 'correctAnswer' : (question.answer == 'B' ? 'incorrectAnswer' : ''))"></p-radioButton>
+                      <label for="answerB"><img [src]="question.answerB" alt=""></label>
+                  </div>
+
+                  <div class="field-radiobutton">
+                      <i [class]="(question.correctAnswer == 'C' ? 'fa fa-check' : (question.answer == 'C' ? 'fa fa-times' : 'fa fa-bell')) + ' indicate me-2 mb-2'"></i>
+                      <p-radioButton name="question" value="C" [(ngModel)]="question.answer == 'C' ? question.answer : question.correctAnswer" inputId="answerC" [disabled]="true" [styleClass]="(question.correctAnswer == 'C' ? 'correctAnswer' : (question.answer == 'C' ? 'incorrectAnswer' : ''))"></p-radioButton>
+                      <label for="answerC"><img [src]="question.answerC" alt=""></label>
+                  </div>
+
+                  <div class="field-radiobutton">
+                      <i [class]="(question.correctAnswer == 'D' ? 'fa fa-check' : (question.answer == 'D' ? 'fa fa-times' : 'fa fa-bell')) + ' indicate me-2 mb-2'"></i>
+                      <p-radioButton name="question" value="D" [(ngModel)]="question.answer == 'D' ? question.answer : question.correctAnswer" inputId="answerD" [disabled]="true" [styleClass]="(question.correctAnswer == 'D' ? 'correctAnswer' : (question.answer == 'D' ? 'incorrectAnswer' : ''))"></p-radioButton>
+                      <label for="answerD"><img [src]="question.answerD" alt=""></label>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template pTemplate="footer">
+    </ng-template>
+    </p-dataView>
+  </div>
+</div>
