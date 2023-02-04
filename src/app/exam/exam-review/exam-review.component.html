@@ -31,8 +31,8 @@
     <p-dataView #question_dv [value]="questionsNum" layout="list" [styleClass]="'dv-question'" [rows]="5" [paginator]="true" [first]="first">
       <ng-template let-question pTemplate="listItem">
         <div class="col-12">
-            <div [class]="((question.answer == question.correctAnswer) ? 'correctAnswer ' : 'incorrectAnswer ') +  'question-list-item my-3 p-3'" [id]="'answer' + question.no">
-                <div class="question-list-top d-flex flex-nowrap">
+            <div [class]="((question.answer == question.correctAnswer) ? 'correctAnswer ' : 'incorrectAnswer ') +  'question-list-item my-3'" [id]="'answer' + question.no">
+                <div class="question-list-top d-flex flex-nowrap pt-3 ps-3 pe-3">
                   <div class="title me-2">
                     Câu {{question.no}}: {{question.question}}
                   </div>
@@ -46,7 +46,7 @@
                 <div class="question-list-image" [style]="(question.questionImg == '') ? 'display: none' : ''" >
                   <img [src]="question.questionImg" alt="">
                 </div>
-                <div class="question-list-answer mt-3">
+                <div class="question-list-answer mt-3 px-3">
 
                   <div class="field-radiobutton">
                     <i [class]="(question.correctAnswer == 'A' ? 'fa fa-check' : (question.answer == 'A' ? 'fa fa-times' : 'fa fa-bell')) + ' indicate me-2 mb-2'"></i>
@@ -72,6 +72,10 @@
                       <label for="answerD"><img [src]="question.answerD" alt=""></label>
                   </div>
 
+                </div>
+
+                <div [class]="((question.answer == question.correctAnswer) ? ('correctAnswer') : ('incorrectAnswer')) + ' question-list-explanation p-3'">
+                  <img [src]="question.answerImage" alt="">
                 </div>
             </div>
         </div>

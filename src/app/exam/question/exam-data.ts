@@ -830,7 +830,7 @@ export class ExamData {
             answerC: "http://localhost:4200/assets/image/questionAnswer1C.png",
             answerD: "http://localhost:4200/assets/image/questionAnswer1D.png",
             answerExplanation: "",
-            answerImage: ""
+            answerImage: "http://localhost:4200/assets/image/questionExplanation1.png"
             
         },
         {
@@ -847,7 +847,7 @@ export class ExamData {
             answerC: "http://localhost:4200/assets/image/questionAnswer2C.png",
             answerD: "http://localhost:4200/assets/image/questionAnswer2D.png",
             answerExplanation: "",
-            answerImage: ""
+            answerImage: "http://localhost:4200/assets/image/questionExplanation2.png"
         },
         {
             no: "3",
@@ -863,7 +863,7 @@ export class ExamData {
             answerC: "http://localhost:4200/assets/image/questionAnswer3C.png",
             answerD: "http://localhost:4200/assets/image/questionAnswer3D.png",
             answerExplanation: "",
-            answerImage: ""
+            answerImage: "http://localhost:4200/assets/image/questionExplanation3.png"
         },
         {
             no: "4",
@@ -879,7 +879,7 @@ export class ExamData {
             answerC: "http://localhost:4200/assets/image/questionAnswer4C.png",
             answerD: "http://localhost:4200/assets/image/questionAnswer4D.png",
             answerExplanation: "",
-            answerImage: ""
+            answerImage: "http://localhost:4200/assets/image/questionExplanation4.png"
         },
         {
             no: "5",
@@ -895,7 +895,7 @@ export class ExamData {
             answerC: "http://localhost:4200/assets/image/questionAnswer5C.png",
             answerD: "http://localhost:4200/assets/image/questionAnswer5D.png",
             answerExplanation: "",
-            answerImage: ""
+            answerImage: "http://localhost:4200/assets/image/questionExplanation5.png"
         },
         {
             no: "6",
@@ -911,7 +911,7 @@ export class ExamData {
             answerC: "http://localhost:4200/assets/image/questionAnswer1C.png",
             answerD: "http://localhost:4200/assets/image/questionAnswer1D.png",
             answerExplanation: "",
-            answerImage: ""
+            answerImage: "http://localhost:4200/assets/image/questionExplanation1.png"
             
         },
         {
@@ -928,7 +928,7 @@ export class ExamData {
             answerC: "http://localhost:4200/assets/image/questionAnswer2C.png",
             answerD: "http://localhost:4200/assets/image/questionAnswer2D.png",
             answerExplanation: "",
-            answerImage: ""
+            answerImage: "http://localhost:4200/assets/image/questionExplanation2.png"
         },
         {
             no: "8",
@@ -944,7 +944,7 @@ export class ExamData {
             answerC: "http://localhost:4200/assets/image/questionAnswer3C.png",
             answerD: "http://localhost:4200/assets/image/questionAnswer3D.png",
             answerExplanation: "",
-            answerImage: ""
+            answerImage: "http://localhost:4200/assets/image/questionExplanation3.png"
         },
         {
             no: "9",
@@ -960,7 +960,7 @@ export class ExamData {
             answerC: "http://localhost:4200/assets/image/questionAnswer4C.png",
             answerD: "http://localhost:4200/assets/image/questionAnswer4D.png",
             answerExplanation: "",
-            answerImage: ""
+            answerImage: "http://localhost:4200/assets/image/questionExplanation4.png"
         },
         {
             no: "10",
@@ -976,7 +976,7 @@ export class ExamData {
             answerC: "http://localhost:4200/assets/image/questionAnswer5C.png",
             answerD: "http://localhost:4200/assets/image/questionAnswer5D.png",
             answerExplanation: "",
-            answerImage: ""
+            answerImage: "http://localhost:4200/assets/image/questionExplanation5.png"
         },
     ];
 }
