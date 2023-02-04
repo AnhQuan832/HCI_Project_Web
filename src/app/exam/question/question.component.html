@@ -35,26 +35,26 @@
                   <div class="title">
                     Câu {{question.no}}: {{question.question}}
                   </div>
-                  <button [class]="(question.isFlag ? ('flag ') : ('none-flag ')) +'pi pi-flag-fill d-inline float-end'" (click)="question.isFlag = !question.isFlag" ></button>
-                </div>
+                    <button [class]="(question.isFlag ? ('flag ') : ('none-flag ')) +'pi pi-flag-fill d-inline float-end'" (click)="question.isFlag = !question.isFlag" ></button>
+                  </div>
                 <div class="question-list-image" [style]="(question.questionImg == '') ? 'display: none' : ''" >
                   <img [src]="question.questionImg" alt="">
                 </div>
                 <div class="question-list-answer mt-3">
                   <div class="field-radiobutton">
-                    <p-radioButton name="city" value="A" [(ngModel)]="question.answer" inputId="answerA" (onClick)="question.isAnswer = true"></p-radioButton>
+                    <p-radioButton name="question" value="A" [(ngModel)]="question.answer" inputId="answerA" (onClick)="question.isAnswer = true"></p-radioButton>
                     <label for="answerA"><img [src]="question.answerA" alt=""></label>
                   </div>
                   <div class="field-radiobutton">
-                      <p-radioButton name="city" value="B" [(ngModel)]="question.answer" inputId="answerB" (onClick)="question.isAnswer = true"></p-radioButton>
+                      <p-radioButton name="question" value="B" [(ngModel)]="question.answer" inputId="answerB" (onClick)="question.isAnswer = true"></p-radioButton>
                       <label for="answerB"><img [src]="question.answerB" alt=""></label>
                   </div>
                   <div class="field-radiobutton">
-                      <p-radioButton name="city" value="C" [(ngModel)]="question.answer" inputId="answerC" (onClick)="question.isAnswer = true"></p-radioButton>
+                      <p-radioButton name="question" value="C" [(ngModel)]="question.answer" inputId="answerC" (onClick)="question.isAnswer = true"></p-radioButton>
                       <label for="answerC"><img [src]="question.answerC" alt=""></label>
                   </div>
                   <div class="field-radiobutton">
-                      <p-radioButton name="city" value="D" [(ngModel)]="question.answer" inputId="answerD" (onClick)="question.isAnswer = true"></p-radioButton>
+                      <p-radioButton name="question" value="D" [(ngModel)]="question.answer" inputId="answerD" (onClick)="question.isAnswer = true"></p-radioButton>
                       <label for="answerD"><img [src]="question.answerD" alt=""></label>
                   </div>
                 </div>

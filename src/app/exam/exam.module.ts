@@ -8,6 +8,7 @@ import { ExamComponent } from './exam/exam.component';
 import { ConfirmComponent } from './confirm/confirm.component';
 import { QuestionComponent } from './question/question.component';
 import { ExamReviewComponent } from './exam-review/exam-review.component';
+import { ExamResultComponent } from './exam-result/exam-result.component';
 
 import { BreadcrumbModule } from 'primeng/breadcrumb';
 import { TableModule } from 'primeng/table';
@@ -17,7 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { PaginatorModule } from 'primeng/paginator';
-import { ExamResultComponent } from './exam-result/exam-result.component';
+import { InputSwitchModule } from 'primeng/inputswitch';
 @NgModule({
   imports: [
     CommonModule,
@@ -30,7 +31,8 @@ import { ExamResultComponent } from './exam-result/exam-result.component';
     ReactiveFormsModule,
     FormsModule,
     ScrollTopModule,
-    PaginatorModule
+    PaginatorModule,
+    InputSwitchModule
   ],
   declarations: [
     ExamComponent,
