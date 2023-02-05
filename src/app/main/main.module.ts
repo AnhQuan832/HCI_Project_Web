@@ -26,6 +26,8 @@ import { EditorModule } from 'primeng/editor';
 import { SidebarModule } from 'primeng/sidebar';
 import { ConfirmPopupModule } from 'primeng/confirmpopup';
 import { ToastModule } from 'primeng/toast';
+import { MultiSelectModule } from 'primeng/multiselect';
+import { ChartModule } from 'primeng/chart';
 
 @NgModule({
   imports: [
@@ -46,7 +48,9 @@ import { ToastModule } from 'primeng/toast';
     EditorModule,
     SidebarModule,
     ConfirmPopupModule,
-    ToastModule
+    ToastModule,
+    MultiSelectModule,
+    ChartModule
   ],
   declarations: [
     LandingComponent,
