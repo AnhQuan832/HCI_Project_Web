@@ -36,11 +36,11 @@
                   <div class="title me-2">
                     Câu {{question.no}}: {{question.question}}
                   </div>
-                    <div *ngIf="question.answer == question.correctAnswer" class="correctAnswer ms-auto pointPerQuestion">
-                      0.2/0.2
+                    <div *ngIf="question.answer == question.correctAnswer" class="correctAnswer ms-auto pointPerQuestion text-end">
+                      0.2/0.2 <br> 02:02
                     </div>
-                    <div *ngIf="!(question.answer == question.correctAnswer)" class="incorrectAnswer ms-auto pointPerQuestion">
-                      0.0/0.2
+                    <div *ngIf="!(question.answer == question.correctAnswer)" class="incorrectAnswer ms-auto pointPerQuestion text-end">
+                      0.0/0.2 <br> 03:01
                     </div>
                   </div>
                 <div class="question-list-image" [style]="(question.questionImg == '') ? 'display: none' : ''" >

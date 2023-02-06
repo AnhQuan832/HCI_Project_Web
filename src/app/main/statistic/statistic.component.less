@@ -1,0 +1,312 @@
+:host ::ng-deep{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+
+    .table-uni{
+        border: 2px solid var(--secondary);
+        border-radius: 15px;
+
+        .p-datatable-header{
+            border: none;
+            border-radius: 15px;
+            background-color: #fff;
+        }
+
+        .p-sortable-column,
+        .p-datatable-thead > tr > th{
+            border-top: none;
+            border-bottom: 2px solid var(--secondary) ;
+
+            font-family: 'Gentium Book Basic';
+            font-style: normal;
+            font-size: 20px;
+        }
+
+        .p-datatable-wrapper{
+            border-radius: 15px;
+        }
+
+        .p-datatable-thead{
+            border: none;
+        }
+
+        .p-datatable-tbody{
+            border-radius: 15px;
+        }
+
+        .p-datatable-tbody > tr{
+            border-bottom: 2px solid var(--secondary) ;
+        }
+
+        .p-datatable-tbody > tr:last-child{
+            border-bottom: none;
+            border-radius: 15px;
+        }
+
+        .p-datatable-tbody > tr:last-child > td{
+            border-bottom: none;
+            border-radius: 15px;
+        }
+
+        .p-datatable-tbody > tr > td{
+            border: none;
+
+            font-family: 'Gentium Book Basic';
+            font-style: normal;
+            font-size: 24px;
+        }
+
+        .deleteBtn{
+            
+            background-color: #fff;
+            border: none;
+
+            color: var(--primary);
+
+            i{
+                font-size: 30px;
+            }
+        }
+    }
+
+    .table-dream{
+        border: 2px solid var(--secondary);
+        border-radius: 15px;
+
+        .p-datatable-header{
+            border: none;
+            border-radius: 15px;
+            background-color: #fff;
+        }
+
+        .p-sortable-column,
+        .p-datatable-thead > tr > th{
+            border-top: none;
+            border-bottom: 2px solid var(--secondary) ;
+
+            font-family: 'Gentium Book Basic';
+            font-style: normal;
+            font-size: 20px;
+        }
+
+        .p-datatable-thead{
+            border: none;
+        }
+
+        .p-datatable-tbody{
+            border-radius: 15px;
+        }
+
+        .p-datatable-tbody > tr{
+            border-bottom: 2px solid var(--secondary) ;
+        }
+
+        .p-datatable-tbody > tr:last-child{
+            border-bottom: none;
+            border-radius: 15px;
+        }
+
+        .p-datatable-tbody > tr:last-child > td{
+            border-bottom: none;
+            border-radius: 15px;
+        }
+
+        .p-datatable-tbody > tr > td{
+            border: none;
+
+            font-family: 'Gentium Book Basic';
+            font-style: normal;
+            font-size: 24px;
+        }
+
+        .p-datatable-tfoot{
+            width: 100%;
+        }
+    }
+
+    .p-datatable-table{
+        margin-top: 10px;
+
+        text-align: center;
+
+        font-family: 'Gentium Book Basic';
+        font-style: normal;
+        font-size: 24px;
+    }
+    
+    .p-input-icon-left > .p-inputtext{
+        width: 400px;
+        height: 50px;
+
+        border-radius: 10px;
+
+        font-family: 'Gentium Book Basic';
+        font-style: normal;
+        font-size: 20px;
+    }
+
+    .p-dropdown{
+        width: 400px;
+        height: 50px;
+        border: 2px solid var(--secondary);
+
+        .p-dropdown-label{
+            font-family: 'Gentium Book Basic';
+            font-style: normal;
+            font-size: 20px;
+        }
+
+        .p-dropdown-label.p-placeholder{
+            color: var(--secondary);
+        }
+    }
+
+    .p-dropdown-panel{
+        .p-dropdown-items{
+            font-family: 'Gentium Book Basic';
+            font-style: normal;
+
+            .p-dropdown-item.p-highlight{
+                background-color: var(--primary);
+            }
+        }
+    }
+    
+    .p-multiselect{
+        width: 400px;
+        height: 50px;
+        border: 2px solid var(--secondary);
+
+        .p-multiselect-label{
+            font-family: 'Gentium Book Basic';
+            font-style: normal;
+            font-size: 20px;
+        }
+
+        .p-multiselect-label.p-placeholder{
+            color: var(--secondary);
+        }
+
+        .p-multiselect-items .p-multiselect-item{
+            font-family: 'Gentium Book Basic';
+            font-style: normal;
+            font-size: 20px;
+        }
+
+        .p-multiselect-items .p-multiselect-item.p-highlight{
+            background-color: var(--primary);
+        }
+
+        .p-multiselect-panel{ 
+            .p-multiselect-header{
+            }
+        }
+    }
+
+    .p-paginator-bottom{
+        border-radius: 15px;
+        border: none;
+    }
+
+    .p-paginator .p-paginator-first, .p-paginator .p-paginator-prev, .p-paginator .p-paginator-next, .p-paginator .p-paginator-last{
+        border: none;
+        color: var(--primary);
+    }
+    
+    .p-paginator .p-paginator-pages .p-paginator-page.p-highlight{
+        background-color: var(--primary);
+    }
+
+    .p-paginator .p-paginator-pages .p-paginator-page{
+        border: none;
+    }
+
+    .p-dataview-emptymessage{
+        .p-datatable .p-datatable-tbody > tr > td{
+            font-family: 'Gentium Book Basic';
+            font-style: normal;
+            font-size: 20px;
+        }
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+    height: fit-content;
+}
+
+.statistic-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.statistic-banner{
+    width: 100% !important;
+    min-width: 900px;
+    height: 400px;
+    background: linear-gradient(180deg, #9DFFB3 0%, #1AA37A 100%);
+    border-radius: 15px;
+}
+
+.container{
+    max-width: 100%;
+}
+
+.banner-title{
+    font-family: 'Gentium Book Basic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 128px;
+
+    color: #FFFFFF;
+}
+
+.slogan-title{
+    font-family: 'Gentium Book Basic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+
+    color: #0A2647;
+}
+
+.slogan{
+    font-family: 'Gentium Book Basic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+
+    color: #FFFFFF;
+}
+
+.chart-wrapper {
+    width: 100% !important;
+    min-width: 900px;
+    height: fit-content;
+    padding-inline: 7.5rem;
+
+    .chart-title{
+        font-family: 'Gentium Book Basic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+    }
+}
+
+.table-dream-title{
+    font-family: 'Gentium Book Basic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.dream-note{
+    color: var(--secondary);
+    font-family: 'Gentium Book Basic';
+}
+

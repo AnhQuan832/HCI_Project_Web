@@ -7,6 +7,7 @@ import { LessonComponent } from './lesson/lesson.component';
 import { ReviewComponent } from './review/review.component';
 import { StatisticComponent } from './statistic/statistic.component';
 import { LessonVideoComponent } from './lesson-video/lesson-video.component';
+import { ReviewVideoComponent } from './review-video/review-video.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
     path: 'lesson-video',
     component: LessonVideoComponent
   },
+  {
+    path: 'review-video',
+    component: ReviewVideoComponent
+  }
 ];
 
 @NgModule({

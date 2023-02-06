@@ -1,0 +1,122 @@
+<app-lesson-header></app-lesson-header>
+
+<div class="review-video-wrapper m-5 px-5 pb-3">
+    <p-breadcrumb [model]="breadcrumbs"></p-breadcrumb>
+
+    <p-tabView styleClass="mt-1">
+        <p-tabPanel header="Bài tập ứng dụng">
+          <div class="difficluty-note d-flex flex-nowrap">
+            *Mỗi câu hỏi sẽ được dán nhãn độ khó tăng dần theo thứ tự sau:
+  
+            <div class="chip difficulty0 mx-2">Nhận biết</div>
+            <div class="chip difficulty1 mx-2">Thông hiểu</div>
+            <div class="chip difficulty2 mx-2">Vận dụng</div>
+            <div class="chip difficulty3 mx-2">Vận dụng cao</div>
+          </div>
+
+          <div class="question">
+            <p-dataView #question_dv [value]="questionsNum" layout="list" [styleClass]="'dv-question'" [rows]="5" [paginator]="true">
+              <ng-template let-question pTemplate="listItem">
+                <div class="col-12">
+                    <div class="question-list-item my-3 p-3" [id]="'answer' + question.no">
+                        <div class="question-list-top d-flex flex-nowrap">
+                          <div class="title">
+                            Câu {{question.no}}: {{question.question}}
+                          </div>
+                          <div class="source-tag ms-auto">
+                            <div [class]="'chip difficulty-tag text-center difficulty' + question.difficultyLevel">
+                              Đề thi THPTQG - 2020 - Câu {{question.no}}
+                            </div>
+                          </div>
+                        </div>
+                        <div class="question-list-image" [style]="(question.questionImg == '') ? 'display: none' : ''" >
+                          <img [src]="question.questionImg" alt="">
+                        </div>
+                        <div class="question-list-answer mt-3">
+                          <div class="field-radiobutton">
+                            <p-radioButton name="question" value="A" [(ngModel)]="question.answer" inputId="answerA" (onClick)="question.isAnswer = true"></p-radioButton>
+                            <label for="answerA"><img [src]="question.answerA" alt=""></label>
+                          </div>
+                          <div class="field-radiobutton">
+                              <p-radioButton name="question" value="B" [(ngModel)]="question.answer" inputId="answerB" (onClick)="question.isAnswer = true"></p-radioButton>
+                              <label for="answerB"><img [src]="question.answerB" alt=""></label>
+                          </div>
+                          <div class="field-radiobutton">
+                              <p-radioButton name="question" value="C" [(ngModel)]="question.answer" inputId="answerC" (onClick)="question.isAnswer = true"></p-radioButton>
+                              <label for="answerC"><img [src]="question.answerC" alt=""></label>
+                          </div>
+                          <div class="field-radiobutton">
+                              <p-radioButton name="question" value="D" [(ngModel)]="question.answer" inputId="answerD" (onClick)="question.isAnswer = true"></p-radioButton>
+                              <label for="answerD"><img [src]="question.answerD" alt=""></label>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </ng-template>
+              <ng-template pTemplate="footer">
+              </ng-template>
+            </p-dataView>
+          </div>
+        </p-tabPanel>
+        <p-tabPanel header="Bài giải" [selected]="true">
+          <video height="600px" controls class="review-video-frame mb-5" id="video">
+            <source src="http://localhost:4200/assets/lessonVideo.mp4" type="video/mp4">
+          </video>
+
+          <div class="difficluty-note d-flex flex-nowrap my-2">
+            *Bạn có thể bấm vào nhãn độ khó để đến phần giải đề trên video
+          </div>
+
+          <p-dataView #question_dv [value]="questionsNum1" layout="list" [styleClass]="'dv-question'" [rows]="5" [paginator]="true" [first]="first">
+            <ng-template let-question pTemplate="listItem">
+              <div class="col-12">
+                  <div [class]="((question.answer == question.correctAnswer) ? 'correctAnswer ' : 'incorrectAnswer ') +  'question-list-item my-3'" [id]="'answer' + question.no">
+                      <div class="question-list-top d-flex flex-nowrap pt-3 ps-3 pe-3">
+                        <div class="title me-2">
+                          Câu {{question.no}}: {{question.question}}
+                        </div>
+                        <div class="source-tag ms-auto">
+                          <button [class]="'chip difficulty-tag text-center difficulty' + question.difficultyLevel" (click)="setVideoTime(1606)">
+                            Đề thi THPTQG - 2020 - Câu {{question.no}}
+                          </button>
+                        </div>
+                      </div>
+                      <div class="question-list-image" [style]="(question.questionImg == '') ? 'display: none' : ''" >
+                        <img [src]="question.questionImg" alt="">
+                      </div>
+                      <div class="question-list-answer mt-3 px-3">
+      
+                        <div class="field-radiobutton">
+                          <p-radioButton name="question" value="A" [(ngModel)]="question.correctAnswer" inputId="answerA" [disabled]="true" [styleClass]="(question.correctAnswer == 'A' ? 'correctAnswer' : (question.answer == 'A' ? 'incorrectAnswer' : ''))"></p-radioButton>
+                          <label for="answerA"><img [src]="question.answerA" alt=""></label>
+                        </div>
+      
+                        <div class="field-radiobutton">
+                            <p-radioButton name="question" value="B" [(ngModel)]="question.correctAnswer" inputId="answerB" [disabled]="true" [styleClass]="(question.correctAnswer == 'B' ? 'correctAnswer' : (question.answer == 'B' ? 'incorrectAnswer' : ''))"></p-radioButton>
+                            <label for="answerB"><img [src]="question.answerB" alt=""></label>
+                        </div>
+      
+                        <div class="field-radiobutton">
+                            <p-radioButton name="question" value="C" [(ngModel)]="question.correctAnswer" inputId="answerC" [disabled]="true" [styleClass]="(question.correctAnswer == 'C' ? 'correctAnswer' : (question.answer == 'C' ? 'incorrectAnswer' : ''))"></p-radioButton>
+                            <label for="answerC"><img [src]="question.answerC" alt=""></label>
+                        </div>
+      
+                        <div class="field-radiobutton">
+                            <p-radioButton name="question" value="D" [(ngModel)]="question.correctAnswer" inputId="answerD" [disabled]="true" [styleClass]="(question.correctAnswer == 'D' ? 'correctAnswer' : (question.answer == 'D' ? 'incorrectAnswer' : ''))"></p-radioButton>
+                            <label for="answerD"><img [src]="question.answerD" alt=""></label>
+                        </div>
+      
+                      </div>
+      
+                      <div [class]="'question-list-explanation p-3'">
+                        <img [src]="question.answerImage" alt="">
+                      </div>
+                  </div>
+              </div>
+          </ng-template>
+          <ng-template pTemplate="footer">
+          </ng-template>
+          </p-dataView>
+        </p-tabPanel>
+    </p-tabView>
+</div>
