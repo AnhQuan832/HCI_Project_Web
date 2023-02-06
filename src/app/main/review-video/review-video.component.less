@@ -1,0 +1,307 @@
+:host ::ng-deep{
+    height: 100%;
+    width: 100%;
+
+    .p-breadcrumb{
+        background: #fff;
+
+        ul li .p-menuitem-link .p-menuitem-text{
+            color: var(--secondary);
+    
+            font-family: 'Gentium Book Basic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        ul li:last-child .p-menuitem-text{
+            color: var(--primary);
+        }
+    }
+
+    .p-tabview 
+    {
+        .p-tabview-nav {
+            border: none;
+
+            li:first-child .p-tabview-nav-link{
+                height: 45px;
+
+                border-radius: 15px 0px 0px 0px;
+                border: 2px 2px 2px 0;
+                border-color: var(--secondary);
+
+                color: var(--secondary);
+                font-family: 'Gentium Book Basic';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+            }
+            
+            li .p-tabview-nav-link{
+                height: 45px;
+
+                border-radius: 0px 15px 0px 0px;
+                border: 2px 2px 2px 0;
+                border-color: var(--secondary);
+
+                color: var(--secondary);
+                font-family: 'Gentium Book Basic';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+            }
+
+            li.p-highlight .p-tabview-nav-link{
+                background: var(--primary);
+                border: 1px solid #496DEC;
+
+                color: #fff;
+            }
+        }
+
+        .p-tabview-panels{
+            border-radius: 0 15px 15px 15px;
+            border: 2px solid var(--secondary);
+        }
+    }
+
+    .dv-question{
+        border: none;
+
+        .question-list-item{
+            border: 2px solid var(--secondary);
+            border-radius: 15px;
+
+            .question-list-top{
+                height: fit-content;
+
+                .title{
+                    font-family: 'Gentium Book Basic';
+                    font-size: 23px;
+                }
+
+                .flag {
+                    width: 33px;
+                    height: 33px;
+                    margin-left: auto;
+
+                    border-radius: 90px;
+                    border: none;
+                    background-color: var(--primary);
+                
+                    color: #fff;
+                }
+
+                .none-flag{
+                    width: 33px;
+                    height: 33px;
+                    margin-left: auto;
+
+                    border-radius: 90px;
+                    border: 2px solid var(--primary);
+                    background-color: #fff;
+                
+                    color: var(--primary);
+                }
+            }
+
+            .correctAnswer{
+                background-color: #fff;
+
+                .p-radiobutton-box.p-highlight{
+                    background-color: var(--difficulty0);
+                }
+
+                .p-disabled{
+                    opacity: 1;
+                }
+            }
+        }
+
+        .p-dataview-footer{
+            display: flex;
+            justify-content: center;
+
+            background-color: #fff;
+
+            border: none;
+            border-radius: 15px;
+
+            .myBtn{
+                height: 50px;
+                width: 150px;
+
+                background-color: var(--primary);
+                border-radius: 15px;
+                border: none;
+
+                color: #fff;
+                font-family: 'Gentium Book Basic';
+                font-style: normal;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+
+        .p-paginator-bottom{
+            border: none;
+        }
+
+        .p-radiobutton .p-radiobutton-box.p-highlight{
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .p-paginator .p-paginator-first, .p-paginator .p-paginator-prev, .p-paginator .p-paginator-next, .p-paginator .p-paginator-last{
+            border: none;
+            color: var(--primary);
+        }
+        
+        .p-paginator .p-paginator-pages .p-paginator-page.p-highlight{
+            background-color: var(--primary);
+        }
+
+        .p-paginator .p-paginator-pages .p-paginator-page{
+            border: none;
+        }
+
+    }
+
+    .p-dataview.p-dataview-list .p-dataview-content > .p-grid > div{
+        border: none;
+    }
+
+    .p-input-icon-left > .p-inputtext{
+        width: 350px;
+        height: 50px;
+
+        border-radius: 15px;
+        border: 2px solid var(--secondary);
+
+        font-family: 'Gentium Book Basic';
+        font-style: normal;
+        font-size: 20px;
+    }
+
+    .question-list-explanation{
+        border-top:2px solid var(--secondary);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
+
+.review-video-wrapper{
+    background-color: white;
+}
+
+.review-video-frame{
+    width: 100%;
+    height: 900;
+}
+
+#add-note-btn{
+    width: 220px;
+    height: 50px;
+
+    background-color: var(--primary);
+    border: none;
+    border-radius: 15px;
+
+    color: #fff;
+    font-family: 'Gentium Book Basic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.time-stamp-btn{
+    width: 65px;
+
+    background-color: var(--primary);
+    border: none;
+    border-radius: 15px;
+
+    color: #fff;
+    font-family: 'Gentium Book Basic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.funtion-btn{
+    width: 40px;
+    height: 40px;
+
+    border-radius: 90px;
+    border: 2px solid var(--primary);
+    background-color: #fff;
+
+    color: var(--primary);
+}
+
+.modify{
+    background-color: var(--primary);
+
+    color: #fff;
+}
+
+.confirm-btn{
+    width: 150px;
+    height: 40px;
+
+    background-color: var(--primary);
+    border: none;
+    border-radius: 15px;
+
+    color: #fff;
+    font-family: 'Gentium Book Basic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.difficluty-note{
+    font-family: 'Gentium Book Basic';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.chip{
+    border: none;
+    border-radius: 15px;
+    padding-inline: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    background-color: red;
+
+    color: #fff;
+
+    color: #fff;
+    font-family: 'Gentium Book Basic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.difficulty0{
+    background-color: var(--difficulty0);
+}
+
+.difficulty1{
+    background-color: var(--difficulty1);
+}
+
+.difficulty2{
+    background-color: var(--difficulty2);
+}
+
+.difficulty3{
+    background-color: var(--difficulty3);
+}
+
+.difficulty-tag{
+    min-width: 275px;
+}

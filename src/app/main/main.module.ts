@@ -10,6 +10,7 @@ import { LessonComponent } from './lesson/lesson.component';
 import { ReviewComponent } from './review/review.component';
 import { StatisticComponent } from './statistic/statistic.component';
 import { LessonVideoComponent } from './lesson-video/lesson-video.component';
+import { ReviewVideoComponent } from './review-video/review-video.component';
 
 import { CarouselModule} from 'primeng/carousel';
 import { DataViewModule} from 'primeng/dataview';
@@ -28,6 +29,8 @@ import { ConfirmPopupModule } from 'primeng/confirmpopup';
 import { ToastModule } from 'primeng/toast';
 import { MultiSelectModule } from 'primeng/multiselect';
 import { ChartModule } from 'primeng/chart';
+import { RadioButtonModule } from 'primeng/radiobutton';
+
 
 @NgModule({
   imports: [
@@ -50,7 +53,8 @@ import { ChartModule } from 'primeng/chart';
     ConfirmPopupModule,
     ToastModule,
     MultiSelectModule,
-    ChartModule
+    ChartModule,
+    RadioButtonModule
   ],
   declarations: [
     LandingComponent,
@@ -58,7 +62,8 @@ import { ChartModule } from 'primeng/chart';
     LessonComponent,
     ReviewComponent,
     StatisticComponent,
-    LessonVideoComponent
+    LessonVideoComponent,
+    ReviewVideoComponent
   ]
 })
 export class MainModule { }
