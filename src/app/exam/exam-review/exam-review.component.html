@@ -28,6 +28,64 @@
     </div>
   </div>
   <div class="question">
+    <div class="result py-4 mx-3 mt-5">
+      <div class="grade row">
+        <div class="d-flex flex-nowrap justify-content-center align-items-center">
+          Điểm: <strong class="ms-3">7.8/10</strong>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+
+          <div class="row">
+            <div class="col info-title">Bắt đầu làm bài vào lúc:</div>
+            <div class="col info">Thứ ba, 16 tháng 6 2020, 19:30</div>
+          </div>
+
+          <div class="row">
+            <div class="col info-title">Nộp bài vào lúc:</div>
+            <div class="col info">Thứ ba, 16 tháng 6 2020, 20:15</div>
+          </div>
+            
+          <div class="row">
+            <div class="col info-title">Thời gian làm bài:</div>
+            <div class="col info">45 phút 03 giây</div>
+          </div>
+            
+          <div class="row">
+            <div class="col info-title">Số câu đúng:</div>
+            <div class="col info">39/50</div>
+          </div>
+
+        </div>
+        <div class="col difficulty-level pe-5">
+
+          <div class="row my-1">
+            <div class="col-7">Số câu đúng theo độ thông hiểu: </div>
+            <div class="col difficulty-level-0">Nhận biết: <strong>16/20</strong></div>
+          </div>
+
+          <div class="row my-2">
+            <div class="col-7"></div>
+            <div class="col difficulty-level-1">Thông hiểu: <strong>19/20</strong> </div>
+          </div>
+
+          <div class="row my-1">
+            <div class="col-7"></div>
+            <div class="col difficulty-level-2">Vận dụng: <strong>3/5</strong> </div>
+          </div>
+
+          <div class="row my-2">
+            <div class="col-7"></div>
+            <div class="col difficulty-level-3">Vận dụng cao: <strong>1/5</strong> </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
     <p-dataView #question_dv [value]="questionsNum" layout="list" [styleClass]="'dv-question'" [rows]="5" [paginator]="true" [first]="first">
       <ng-template let-question pTemplate="listItem">
         <div class="col-12">
