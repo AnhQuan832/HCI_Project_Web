@@ -55,7 +55,7 @@
     [styleClass]="'all-exam'" [sortOrder]="sortOrder" emptyMessage="Xin lỗi vì sự bất tiện này nhưng hệ thống chưa có bài học bạn cần tìm!">
       <ng-template pTemplate="header" style="overflow: hidden;">
         <form [formGroup]="myFormGroup">
-          Tất cả các bài học tại đây
+          Tất cả các bài thi thử tại đây
           <div class="p-input-icon-left search-bar float-end ms-3">
             <i class="pi pi-search my-auto" style="font-weight: 700;"></i>
             <input #searchBar type="search" pInputText placeholder="Tìm kiếm" class="rounded" (input)="dv.filter($any($event.target).value)" />

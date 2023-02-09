@@ -58,7 +58,7 @@
             <h5>- Khi giải phương trình lượng giác có chứa tan, cot, chứa ẩn ở mẫu, căn bậc chẵn,…thì cần đặt điều kiện cho ẩn.</h5>
             <h5>- Khi giải xong phương trình thì cần chú ý thử lại đáp án, kiểm tra điều kiện</h5>
         </p-tabPanel>
-        <p-tabPanel header="Ghi chú" [selected]="true">
+        <p-tabPanel header="Ghi chú">
             <p-table #dt [value]="notes" [rows]="10" [paginator]="true" [globalFilterFields]="['content']" *ngIf="visible">
                 <ng-template pTemplate="caption">
                     <div class="table-header">
