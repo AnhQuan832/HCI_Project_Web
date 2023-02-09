@@ -25,12 +25,12 @@ export class LessonVideoComponent implements OnInit {
     {
       sec_num: 1805,
       timeText:"30:05",
-      content: "Phúc đẹp trai quá nhưng mà câu từ không đủ để diễn tả nỗi vẽ đẹp trai này nên không thể viết được dài hơn chỉ viết được tới đây thôi"
+      content: "Nếu |a| > 1 thì phương trình vô nghiệm"
     },
     {
       sec_num: 1606,
       timeText:"26:46",
-      content: "Phúc giỏi quá"
+      content: "pi = 3.14"
     },
   ];
   constructor() {

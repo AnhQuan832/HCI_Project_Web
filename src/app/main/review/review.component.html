@@ -16,7 +16,7 @@
   <div class="carousel-subject w-100">
     <p-carousel [value] = subjects [numVisible]="3" [numScroll]="3" [circular]="true" [responsiveOptions]="responsiveOptions">
       <ng-template pTemplate="header">
-        <h5>Hãy chọn môn mà bạn muốn học</h5>
+        <h5>Hãy chọn môn học mà bạn quan tâm</h5>
       </ng-template>
       <ng-template let-subject pTemplate="subject">
         <span [class]="'subject-content w-100 h-100 text-center d-flex align-items-center justify-content-center '+subject.class" (click)="scrollToAllLesson(subject.class)">
@@ -33,7 +33,7 @@
       </ng-template>
       <ng-template let-lesson pTemplate="gridItem">
         <div class="col-12 md:col-3">
-          <div class="lesson-grid-item card p-3 mx-3" [routerLink]="'/main/lesson-video'">
+          <div class="lesson-grid-item card p-3 mx-3" [routerLink]="'/main/review-video'">
               <div class="lesson-grid-item-top">
                   <span class="lesson-chapter">{{lesson.chapter}}</span>
                   <span class="lesson-no float-end">{{lesson.no}}</span>
@@ -68,7 +68,7 @@
       </ng-template>
       <ng-template let-lesson pTemplate="gridItem">
         <div class="col-12 md:col-3">
-          <div class="lesson-grid-item card p-3 m-3" [routerLink]="'/main/lesson-video'">
+          <div class="lesson-grid-item card p-3 m-3" [routerLink]="'/main/review-video'">
               <div class="lesson-grid-item-top">
                   <span class="lesson-chapter">{{lesson.chapter}}</span>
                   <span class="lesson-no float-end">{{lesson.no}}</span>
