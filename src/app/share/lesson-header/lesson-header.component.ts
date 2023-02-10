@@ -3,6 +3,7 @@ import {
   faUserGraduate 
 } from '@fortawesome/free-solid-svg-icons';
 import { MenuItem } from 'primeng/api';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-lesson-header',
@@ -178,10 +179,14 @@ export class LessonHeaderComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor(private router: Router) {};
 
   ngOnInit() {
   }
 
   faUserGraduate = faUserGraduate;
+  toLesson(){
+    this.router.navigateByUrl("/main/lesson");
+  }
+
 }

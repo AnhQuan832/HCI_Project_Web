@@ -51,7 +51,7 @@ export class MockTestComponent implements OnInit {
       class: "socedu"
     },
     {
-      title: "Toán-Hóa-Sinh",
+      title: "Lý-Hóa-Sinh",
       class: "natu"
     },
     {
@@ -143,7 +143,7 @@ export class MockTestComponent implements OnInit {
       unit: "Bộ GD & ĐT"
     },
     {
-      subject: "Toán-Hóa-Sinh",
+      subject: "Lý-Hóa-Sinh",
       class: "natu",
       duration: "150 phút",
       content: "Toàn bộ chương trình Toán, Hóa, Sinh 12",
@@ -170,7 +170,7 @@ export class MockTestComponent implements OnInit {
       unit: "Bộ GD & ĐT"
     },
     {
-      subject: "Toán-Hóa-Sinh",
+      subject: "Lý-Hóa-Sinh",
       class: "natu",
       duration: "150 phút",
       content: "Toàn bộ chương trình Toán, Hóa, Sinh 12",
@@ -197,7 +197,7 @@ export class MockTestComponent implements OnInit {
       unit: "Trường THPT Thủ Đức"
     },
     {
-      subject: "Toán-Hóa-Sinh",
+      subject: "Lý-Hóa-Sinh",
       class: "natu",
       duration: "150 phút",
       content: "Toàn bộ chương trình Toán, Hóa, Sinh 12",
@@ -245,7 +245,7 @@ export class MockTestComponent implements OnInit {
       unit: "Bộ GD & ĐT"
     },
     {
-      subject: "Toán-Hóa-Sinh",
+      subject: "Lý-Hóa-Sinh",
       class: "natu",
       duration: "150 phút",
       content: "Toàn bộ chương trình Toán, Hóa, Sinh 12",
@@ -296,7 +296,7 @@ export class MockTestComponent implements OnInit {
     {label: "Lịch Sử", value: "hist"},
     {label: "Địa Lý", value: "geo"},
     {label: "GDCD", value: "socedu"},
-    {label: "Toán-Hóa-Sinh", value: "natu"},
+    {label: "Lý-Hóa-Sinh", value: "natu"},
     {label: "Sử-Địa-GDCD", value: "soci"}
   ];
   sortYearOptions = ["2019", "2020", "2020/2021"];
