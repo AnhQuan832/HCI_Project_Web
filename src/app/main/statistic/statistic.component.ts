@@ -9,30 +9,36 @@ export class StatisticComponent implements OnInit {
 
   universities = [
     {
-      uniID: "UIT",
+      uniID: "QSC",
+      uniShortName: "UIT",
       uniName: "Đại học công nghệ thông tin"
     },
     {
-      uniID: "HCMUT",
+      uniID: "QSB",
+      uniShortName: "HCMUT",
       uniName: "Trường Đại học Bách khoa thành phố Hồ Chí Minh"
     },
     {
-      uniID: "HCMUS",
+      uniID: "QST",
+      uniShortName: "HCMUS",
       uniName: "Trường Đại học Khoa học Tự nhiên"
     },
   ];
 
   selectedUniversities = [
     {
-      uniID: "UIT",
+      uniID: "QSC",
+      uniShortName: "UIT",
       uniName: "Đại học công nghệ thông tin"
     },
     {
-      uniID: "HCMUT",
+      uniID: "QSB",
+      uniShortName: "HCMUT",
       uniName: "Trường Đại học Bách khoa thành phố Hồ Chí Minh"
     },
     {
-      uniID: "HCMUS",
+      uniID: "QST",
+      uniShortName: "HCMUS",
       uniName: "Trường Đại học Khoa học Tự nhiên"
     },
   ]
